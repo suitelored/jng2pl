@@ -1,0 +1,3054 @@
+﻿/*
+
+text colors:
+0 - domyślny "złoty"
+1 - żółty
+2 - ciemnopomarańczowy
+3 - biały
+4 - szary
+
+6 - morski
+7 - fioletowy
+8 - zielony
+9 - czerwony
+
+Special symbols:
+\u2710 = Z symbol
+\u2711 = Left MB
+\u2712 = Right MB
+\u2713 = Mÿ dlሠ̆MB
+\u2716 = gp X
+\u2717 = gp Y
+\u2718 = gp A
+\u2719 = gp B
+\u2720 = gp LT
+\u2721 = gp RT
+
+\n = break line
+*/
+
+game_mode_0 = Prosty
+game_mode_1 = Standardowy
+game_mode_2 = \9Hardcore'owy
+
+difficulty_0 = Zero
+difficulty_1 = Zwykły 
+difficulty_2 = Twardy
+difficulty_3 = Koszmar
+difficulty_4 = Piekło   
+difficulty_5 = Szaleństwo 
+difficulty_6 = Nieludzki
+difficulty_7 = Apokalipsa 
+difficulty_8 = Boski
+difficulty_9 = Niemożliwy
+difficulty_last = Ostateczny
+
+hero_rank_0 = Rekrut
+hero_rank_1 = Szeregowy
+hero_rank_2 = Kapral
+hero_rank_3 = Sierżant
+hero_rank_4 = Podchorąży
+hero_rank_5 = Chorąży
+hero_rank_6 = Porucznik
+hero_rank_7 = Kapitan
+hero_rank_8 = Major
+hero_rank_9 = Pułkownik
+hero_rank_10 = Generał
+hero_rank_11 = Gwiezdny Komandor
+hero_rank_12 = Gwiezdny Admirał
+hero_rank_13 = Galaktyczny Mistrz
+hero_rank_14 = Pan Obrońca
+hero_rank_15 = Legendarny Heros
+
+leaderboards_title = \1JETS'N'GUNS 2 \3RANKING 
+leaderboards_no_data = \4Brak dostępnych danych. Rozłączono?
+
+not_set = Nieustawione
+
+tutor_leave = Opuszczasz bezpieczną strefę. Przed wyruszeniem sprawdź swoje systemy. Protokoły bezpieczeństwa nieaktywne. Kontynuujesz na własne ryzyko. 
+
+tutor_destroy = ZNISZCZ CELE
+
+tutor_w_test = SPRAWDŹ SWOJE
+tutor_w_weapons = UZBROJENIE
+tutor_w_heat = W WYPADKU\nPRZEGRZANIA\nWSTRZYMAJ OGIEŃ
+
+tutor_b_bombs = UŻYJ\nSWOICH\nBOMB
+tutor_b_reload = BOMBY\nMUSZĄ SIĘ\nPRZEŁADOWAĆ
+
+tutor_d_barrier = UŻYJ GENERATORA BARIERY\nABY BLOKOWAĆ WIĄZKI
+
+tutor_thanks = DZIĘKUJEMY\nZA TWOJĄ\nWSPÓŁPRACĘ
+
+
+
+[text = end_level_text]
+GRATULACJE\n\n
+Ukończyłeś wersję Jets'n'Guns 2 z Wczesnego Dostępu.\n
+To jest prowizoryczne zakończenie poziomu.\n 
+Możesz powrócić do sklepu lub kontynuować grę na wyższym poziomie trudności.
+[end] 
+
+[text = end_level_text_casual]
+CONGRATULATIONS\n\n
+Ukończyłeś wersję Jets'n'Guns 2 z Wczesnego Dostępu - Tryb Prosty.\n
+To jest prowizoryczne zakończenie poziomu.\n 
+Możesz powrócić do sklepu i kontynuować grę.\n
+Jeśli pragniesz większego wyzwania, spróbuj zagrać w Zwykłym trybie.
+[end] 
+
+default_player_name_1 = Maverick
+default_player_name_2 = Iceman //Tom Kazansky - Civilni jmeno Icemana z Topgunu
+
+//HUD
+hud_score = WYNIK
+hud_score_remains_to_record = Wynik do pobicia//Remains to record
+hud_score_over_record = Zysk //Record overcome
+hud_hp = PW
+hud_jet_pack = JETPACK
+hud_hp_text = PW
+hud_danger = ZAGROŻENIE
+hud_recovery = Przywracanie
+hud_ship_ready = Okręt gotowy!
+
+//Messages & Warnings
+game_paused = Pauza
+checkpoint_reached = Punkt kontrolny osiągnięty
+checkpoint_revive_reached = Drugi gracz jest znów w akcji!
+checkpoint_revive = WSKRZESZENIE
+hud_warning_hull_critical = KADŁUB W STANIE KRYTYCZNYM!
+hud_warning_shield_out = TARCZA WYCZERPANA!
+hud_warning_mana_rady = U.L.T.R.A GOTOWE
+hud_warning_score = WYNIK +@score
+hud_warning_hp = INTEGRALNOŚĆ KADŁUBA +@hp
+hud_warning_mission_completed = MISJA WYKONANA!
+hud_warning_mission_failed = PORAŻKA!
+hud_warning_ship_destroyed = OKRĘT ZOSTAŁ ZNISZCZONY!
+hud_warning_gravity_low = NISKA GRAWITACJA!
+hud_warning_gravity_collapses = NASTĘPUJE ZAPAŚĆ GRAWITACJI!
+
+//Carnnage tv jingles
+carnage_tv_level_1 = MULTIKILL!
+carnage_tv_level_2 = BRUTALNIE!
+carnage_tv_level_3 = MASAKRA!
+carnage_tv_level_4 = KRWAWA JATKA!
+carnage_tv_level_5 = NIELUDZKO!
+carnage_tv_level_6 = LUDOBÓJSTWO!
+carnage_tv_level_7 = CAŁKOWITA RZEŹ!
+
+//Bonuses
+bonus_power_taken = PODWÓJNA MOC!
+
+bonus_cargo_taken = ŁADUNEK PRZEJĘTY
+bonus_duck_taken = ZNALEZIONO TAJNĄ GUMOWĄ KACZUSZKĘ
+bonus_hitchhiker_taken = PODWOŻENIE GALAKTYCZNEGO AUTOSTOPOWICZA
+
+/*
+bonus_mana_small_taken = Antymateria +10
+bonus_mana_medium_taken = Antymateria +25
+bonus_mana_big_taken = Antymateria +50
+*/
+bonus_mana_taken = Antymateria +@val
+
+bonus_secret_level_found = Tajny poziom odnaleziony!
+bonus_xmas_voucher_taken = Masz prezent!
+bonus_xmas_sledger_safe = Saneczkarz został ocalony!
+
+secret_found = SEKRET ODNALEZIONY!
+
+//------------------------------------------------------------------------------
+// ERROR MESSAGES
+
+[text = error_item_does_not_fit]
+\9Ten rodzaj przedmiotu tutaj nie pasuje.  
+[end]
+
+[text = error_equipment_collision]
+\9To urządzenie jest wyłączone, ponieważ już używasz innego przedmiotu tego typu.  
+[end]
+
+[text = error_no_main_weapon]
+\9To urządzenie jest wyłączone, ponieważ nie ma broni w łożu głównego działa.  
+[end]
+
+[text = error_gem_does_not_fit]
+\9This G.E.M. nie działa z danym typem uzbrojenia.  
+[end]
+
+
+//------------------------------------------------------------------------------
+// ITEM TYPES
+
+item_type_armor = Pancerz
+item_type_beam = Wiązka
+item_type_blaster = Działko
+item_type_bomb = Bomba
+item_type_cannon = Działo
+item_type_common = Rozmaite rzeczy
+item_type_device = Urządzenie
+item_type_equipment = Wyposażenie
+item_type_gem = G.E.M.
+item_type_gunbot = Bomba / Bot ostrzałowy
+item_type_loadout = Rozmaite rzeczy
+item_type_mana_device = Urządzenie Antymateryjne
+item_type_medal = Medal
+item_type_missile = Rakiety
+item_type_rammer = Broń
+//item_type_satelite = Satelita
+item_type_shield = Tarcza
+
+//------------------------------------------------------------------------------
+// WEAPONS
+
+//spis device
+name_weapon/fireball = Kula ognia
+[text = desc_weapon/fireball]
+Kula ognia jest prawdopodobnie najpotężniejszym działem plazmowym na rynku. 
+Potężna komora generacji plazmy wystrzeliwuje kulę plazmy o potężnym cieple i energii. 
+Kula jest bardzo niestabilna i szybko rozpada się na pomniejsze ogniste pociski.
+[end]
+
+name_weapon/rammer = Taran
+[text = desc_weapon/rammer]
+Ten masywny metalowy tryb jest zaprojektowany do pełnokontaktowej walki w zwarciu.
+Z tego powodu są dostarczane głównie kosmicznym gladiatorom. 
+Może też dobrze służyć jako przednia tarcza oraz trałowania pól minowych.
+[end]
+
+name_weapon/eball = ElektroKula 
+[text = desc_weapon/eball]
+Zafunduj sobie swój własny turbodoładowany generator prądu! Może być użyty jako taran, ale również
+wystrzeliwuje silne impulsy elektryczne pomiędzy statkiem a sobą. Cokolwiek stanie na drodze,
+otrzymuje potężne obrażenia.
+[end]
+
+name_weapon/candy_gun = Candy Gun Mk.I
+[text = desc_weapon/candy_gun]
+Mad design of this weapon uses powerful pneumatic system to catapult super-hardened Qwaxian sugar canes as projectiles.
+This alien candy is so hard it can rip through heavy metal plating.
+Defeat your oposition with power of bright colors and diabetes!
+\n\n
+\6"Now I have a machine gun. Ho! Ho! Ho!"
+[end]
+
+name_weapon/shit_gun = Excrementor 666
+[text = desc_weapon/shit_gun]
+Life of a space plumber is a tough one. When pipes are clogged and you must deal with a ton of toxic alien droppings,
+this is the tool that you need. What's even better is the fact, that you can reverse the suction and eject all the radioactive
+material back at people who wronged you!  
+[end]
+
+name_weapon/belzebub = Belzebub Mortar
+[text = desc_weapon/belzebub]
+This is a big hit of Anarchy Ltd. The name of this mortar is a synonym for ultimate destruction.
+The weapon is provided with special cluster ammunition that splits on impact for secondary explosions.
+[end]
+
+name_weapon/blackfist = Blackfist
+[text = desc_weapon/blackfist]
+Freecorp oferuje to starannie wykonane wielolufowe działko które rozsiewa pakiety szybkich kul armatnich 
+z mocą zdolną niszczyć pancerze. Kule są również zmrożone do niskich temperatur, aby zredukować nagrzewanie broni
+oraz zwiększyć kruchość obranych za cel płyt pancerza.  
+[end]
+
+name_weapon/boomerang = Bumerang
+[text = desc_weapon/boomerang]
+To urządzenie elektromagnetyczne wystrzeliwuje rozpryski energii wewnątrz silnego pola magnetycznego,
+co zakrzywia trajkektorię strzału i sprawia że leci z powrotem ku statkowi. 
+to pozwala pokryć duże obszary, trafiać cele za rogiem lub nawet trafiać wrogów od tyłu.
+[end]
+
+//spis device
+name_weapon/cosine = Cosine Moral
+[text = desc_weapon/cosine]
+Ta broń jest wysokoenergetycznym emiterem silnie namagnesowanych cząstek. Pole zmusza strzały
+do oscylacji wokół trajektorii, czyniąc celowanie trudniejszym, ale przy tym sprawiając że strzały poruszają się z dewastującą prędkością.
+Fale energii wysyłane na wyższych poziomach są bezwzględnie niepowstrzymane.  
+[end]
+
+name_weapon/chroniton = Chroniton Gun
+[text = desc_weapon/chroniton]
+fixme chroniton desc
+[end]
+
+name_weapon/clint = Karabin Clint
+[text = desc_weapon/clint]
+Karabin Clint jest małym, tanim karabinem maszynowym, wystrzeliwującym pociski w krótkich seriach. 
+[end]
+
+name_weapon/shogun = Shogun
+[text = desc_weapon/shogun]
+It's basically a shotgun scaled to the size of a ship. 
+Shogun fires a whole cluster of bullets with a single pull of a trigger. 
+Fire rate is relatively low, but damage delivered is quite substantial, 
+and the weapon generates no heat. 
+[end]
+
+name_weapon/daisy_cutter = Przycinacz Stokrotek
+[text = desc_weapon/daisy_cutter]
+Przycinacz Stokrotek zapewnia dobrą siłę ognia za sensowną cenę, i jest, tym samym, standardowym  
+wyborem dla dowolnego nie-zawodowego zabójcy.                                     	
+[end]
+
+name_weapon/duck_gun = Kaczkodziałko
+[text = desc_weapon/duck_gun]
+Niszczycielski wynalazek osławionego doktora Duckensteina niesie kwaczącą śmierć twoim wrogom!
+Działa jak strzelba rozmiaru statku, wystrzeliwując grad masywnych cząstek o nieznacznym cieple.  
+[end]
+
+name_weapon/cyberia = Zamrażacz Cyberia
+[text = desc_weapon/cyberia]
+Unikatowa wiązka mrożąca Korporacji Cyberia naprawdę produkuje ujemne ciepło! Ta broń nie tylko 
+wysysa ciepło z innych układów, wiązka ma również szansę wytworzyć przy uderzeniu odłamki lodu 
+które mogą być podniesione w celu uzyskania dodatkowego efektu chłodzenia. 
+[end]
+
+name_weapon/deflector = Deflector Beam
+[text = desc_weapon/deflector]
+fixme deflector desc
+[end]
+
+name_weapon/flamethrower = Miotacz Ognia
+[text = desc_weapon/flamethrower]
+Brutalne i nieludzkie narzędzie do grillowania wrogów. Piloci, którym nie przeszkadza przewożenie toksycznych łatwopalnych chemikaliów,
+krótki zasięg, i ogromne ciepło z broni, mogą delektować się potężną mocą i krzykami smażonych adwersarzy. 
+[end]
+
+name_weapon/hexagun = Hexagun
+[text = desc_weapon/hexagun]
+Próbny generator of hex-pola był początkowo zaprojektowany do zabaw towarzyskich w
+strategiach turowych, w których ludzie zajmowali miejsca figur (jak w szachach ludzi).
+Niestety podczas pierwszego testu urządzenia wszystkie rodziny biorące udział wyparowały.
+Wytwórca zamienił projekt w broń i został biliarderem. 
+[end]
+
+name_weapon/hydra = Hydra
+[text = desc_weapon/hydra]
+Hydra jest prototypem tajnej broni, przypadkiem niedawno odkrytej, gdy
+zgraja piratów atakowała skład wojskowy; wtedy ta perełka skończyła w ich rękach.
+Złożony projekt broni pozwala podłączyć do siedmiu dział obrotowych z 
+nieograniczonym zasobem naboi. Rezultat jest ciągłym dewastującym strumieniem śmierci.
+[end]
+
+name_weapon/superstar = J. C. Superstar
+[text = desc_weapon/superstar]
+Weapon was constructed by lunatic DJ Honduras back in 2660. DJ created the gun out of light
+effects of his disco to eradicate all dancers in oldies clubs in the whole universe. DJ was
+stopped after the 156th pangalactic gathering of Elvis' doubles, who slaughtered him with
+their guitars.
+[end]
+
+name_weapon/kaiser_franz = Kaiser Franz
+[text = desc_weapon/kaiser_franz]
+This massive cannon is designed for large invasion battle ships, but some power obsessed
+pilots install these on fighter jets as well. Kaisers are heavy and slow cannons, but their 
+lack of fire rate is balanced out by sheer power and minimum heating.
+[end]
+
+name_weapon/kaiser_leopold = Kaiser Leopold
+[text = desc_weapon/kaiser_leopold]
+Even larger model of the famous Kaiser series of heavy cannons. Huge projectiles
+deliver devastating damage to the targets. Kaisers are heavy and slow cannons, but their 
+lack of fire rate is balanced out by sheer power and minimum heating.
+[end]
+
+name_weapon/krakator = Krakator
+[text = desc_weapon/krakator]
+Krakator is an extremely devastating scatter gun. The composite projectiles have limited life time.
+They either hit directly for massive damage or tear apart mid-air in burst of secondary projectiles
+which deliver even more destructive power to all targets within their reach.  
+[end]
+
+name_weapon/la_fontaine = La Fontaine
+[text = desc_weapon/la_fontaine]
+Tania "spluwa-zabawka", strzela małymi kulami plazmy złożonymi z wodoru zamrożonego de zera bezwzględnego.
+Ta broń nie zadaje wielkich obrażeń, ale wciąż może zapewnić pilotowi trochę dodatkowej siły ognia przy ograniczonym budżecie.
+[end]
+
+name_weapon/magnavolt = MagnaVolt
+[text = desc_weapon/magnavolt]
+MagnaVolt is very powerful lightning generator. The single discharge is so strong 
+it's able to set off another lightning, if there's more targets within its reach.
+This chain lightning ability makes it particularly useful against larger 
+groups of enemies. There's one small disadvantage: it runs your battery down pretty fast.
+[end]
+
+name_weapon/manic = Manic Miner
+[text = desc_weapon/manic]
+Mining device of Nuzzle and Co., re-arranged into a weapon. Strikes with strong pulses
+originally expected to unhinge a mass of asteroids, but suitable for disassembling
+space ships as well. Higher levels divide the pulses into many boosted streams, but
+this is not a very safe modification.
+[end]
+
+name_weapon/medusa = M-13 Medusa
+[text = desc_weapon/medusa]
+M-13 is the latest addition to the series of ship-seeking weapons from Quark Industries. 
+The weapon fires specially charged high energy particles with the ability to automatically follow
+and destroy the nearest target. 
+[end]
+
+name_weapon/tbone = T-Bone Splitgun
+[text = desc_weapon/tbone]
+T-Bone was developed as a specialized weapon for crowd control. Elongated projectiles are actually
+particle generators that detonate after a short time and emit two powerful energy waves in opposite
+directions. Great to send it into the swarms of enemies or even for shooting on targets behind covers.
+[end]
+
+name_weapon/start = P-1 Pea Shooter
+[text = desc_weapon/start]
+Podstawowe niskokalibrowe działo używane we wszystkich zakątkach wszechświata jako najtańsza 
+i najbardziej przystępna broń - zarówno przez hobbystycznych łowców nagród, jak i rozwijających się piratów czy niedzielnych najemników.
+[end]
+
+name_weapon/pink_panther = Pink Panther
+[text = desc_weapon/pink_panther]
+Pink Panther has a sophisticated construction with barrels on rotating joints. 
+This allows them to turn around and cover larger area in front of your ship with a rich barrage of shots. 
+A very valuable weapon for those who don't want to bother with aiming.
+[end]
+
+name_weapon/ringball = Ringball Catapult
+[text = desc_weapon/ringball]
+Rigball ejects chain of highly explosive metal spheres, which are emitting a strong magnetic field.
+This field curves the trajectory of the shots into spiraling rings. Within seconds continuous 
+fire completely fills up the area in front of the ship with deadly metalic projectiles.  
+[end]
+
+name_weapon/scorpio = Scorpio Mk.II
+[text = desc_weapon/scorpio]
+Scorpio is an improved plasma cannon shooting electricaly charged plasma balls. Shots
+are quite unstable and therefore have a limited reach. But it is redeemed by the fairly substantial
+damage they can deal. 
+[end]
+
+name_weapon/side_arm = Side Arm
+[text = desc_weapon/side_arm]
+Side Arm is a laser weapon used in figther jets to cover wider area and prevent enemies from flanking. 
+V-shaped firing pattern is also useful for hitting enemies without endangering yourself by flying directly into
+their line of fire.
+[end]
+
+name_weapon/skywalker = Skywalker HG
+[text = desc_weapon/skywalker]
+Lucascorp gun manufacturer appeared on the scene as fast as it vanished. 
+It produced a series of nine weapons with high speed projectiles called "hyperguns",
+but only first three models reached notoriety and success. The rest was trash.
+Skywalker is the most popular of the bunch with its extremely fast and destructive plasma shots.
+[end]
+
+name_weapon/smart_gun = Smart Gun
+[text = desc_weapon/smart_gun]
+Weapons with its own A.I. are rare, but highly valued option on the market. High tech ammunition in combination
+with on-board tracking system can turn bullets into homing projectiles. It is a scary prospect for any evil-doer
+to face bullets that will literally chase him anywhere he moves. 
+[end]
+
+name_weapon/sun_ray = SunTEQ SunRay
+[text = desc_weapon/sun_ray]
+Extremely destructive killing machine. SunTEQ was originally a contractor for artificial
+sun construction. Later they used their technology in weapon industry as well. The gun is 
+able to hold helium fusion inside, which generates gargantuan amounts of energy.
+[end]
+
+name_weapon/super_tornado = Super Tornado
+[text = desc_weapon/super_tornado]
+Improved high end model of Tornado railgun. It uses metal debris instead of ammo and 
+accelerates it to high speeds with magnetic forces. The weapon can generate a constant
+stream of glowing hot metal without any need for ammunition. 
+[end]
+
+
+name_weapon/superkiller = Superkiller
+[text = desc_weapon/superkiller]
+Superkiller is a standard mid-tier rotary cannon with wide variety of uses in any military situation. 
+Fast, reliable, with simple design and minimum heating generated while firing. 
+[end]
+
+name_weapon/terawarp_laser = Terawarp Laser
+[text = desc_weapon/terawarp_laser]
+fixme terawarp_laser desc
+[end]
+
+name_weapon/terrion = Terrion Emitter
+[text = desc_weapon/terrion]
+fixme terrion desc
+[end]
+
+name_weapon/tesla = Tesla Devastator
+[text = desc_weapon/tesla]
+Tesla emits extremely charged energy streams. Strong electromagnetic fields curve the trajectory to a long wave shape, 
+thus makes aiming a little bit difficult, but the power is enormous.
+Gun is not suitable for ships without a hi-end cooling system, because of serious heating.
+[end]
+
+name_weapon/tornado = Tornado Railgun
+[text = desc_weapon/tornado]
+This exotic weapon is a result of the cooperation between Freecorp and Anarchy Ltd.
+It doesn't use any ammo. Instead, it attracts debris surrounding your ship and uses 
+it directly to load the weapon. Constant stream of metal scraps is then propelled 
+through the system of magnetically charged barrels.
+[end]
+
+name_weapon/van_buuren = Van Buuren Laser
+[text = desc_weapon/van_buuren]
+Powerful beam weapon originally invented by a famous doomsayer and a leader of the 
+Dark Equinox cult Elron Van Buuren. The purpose of the weapon was to evaporate
+all members of the cult in an event, where everyone was in a trance like state  
+via electronic music and hypnosis. The weapon was later discovered 
+among the ashes and found its way to black market.
+[end]
+
+name_weapon/viper = Viper Gun
+[text = desc_weapon/viper]
+Light machine gun with special construction that allows to shoot in slightly divergent directions.
+ideal for hunting small and fast targets and spraying large groups of enemies.
+[end]
+
+name_weapon/vulcan = Vulcan DZN
+[text = desc_weapon/vulcan]
+The Vulcan Disintegrator is one of the heaviest weapons in the galaxy. Vulcan raises the energy of the 
+exposed area on the subatomic level and decomposes its matter from inside - regardless of the hardness. 
+Products of the particle decay are usually highly toxic!
+[end]
+
+name_weapon/toxican = Toxican Cannon
+[text = desc_weapon/toxican]
+Toxican Cannon is an experimental weapon designed to trigger corrosive processes in targets via special type of radiation.
+The gun fires no visible shots, only invisible ray of energy. The effect is observable on target, which promptly starts 
+to melt under the influence of the weapons radiation.
+[end]
+
+name_weapon/vx_laser = VX Master Blaster
+[text = desc_weapon/vx_laser]
+VX is one of the finest energetic weapons available. It was developed by a secretive 
+pirate organisation called "Fried Brains" to let them attack even the largest trade ships in known universe. 
+With this on board, you can vaporize any target just by pressing the button. 
+The downside is a considerable amount of heat from the weapon.
+[end]
+
+name_weapon/vx_quattro = VX Quattro
+[text = desc_weapon/vx_quattro]
+Upgraded version of the famous VX laser with four destructive beam generators in a single weapon!
+Produces very devastating outcomes, but only for buyers with top notch cooling systems onboard. 
+Otherwise, you should be prepared to spent some uncomfortable time in your vessel, being fried by inner overheating.
+[end]
+
+name_weapon/x_ray = X-Ray Disruptor
+[text = desc_weapon/x_ray]
+X-ray disruptor beam allows to cover whole battlefield with just one weapon. Instead of concentrating firepower 
+into a one spot, it beams energy in all directions in a distinctive X pattern. It's weaker against a single
+resistant target, but better against large groups of weak enemies.
+[end]
+
+
+name_weapon/xetec = Xetec Moongun
+[text = desc_weapon/xetec]
+XETEC corporation brings this fine blaster with astonishing firepower and amazing speed. 
+The only disadvantage is a limited range of the weapon, compared to the other market competitors.
+But the power and ease to operate makes it a very popular choice anyway.
+[end]
+
+name_weapon/zombie_blues = Zombie Blues
+[text = desc_weapon/zombie_blues]
+This alien gun is based on a special psionic technology. The weapon's generator creates semi-intelligent 
+entities with a highly destructive power, who attack nearby enemies. Energy emitted by the weapon creates 
+nasty hallucinations as a side effect.
+[end]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------------------------------------
+// MISSILES
+
+
+name_missile/banjo = Banjo
+[text = desc_missile/banjo]
+Big Banjo missiles carry extremely destructive submunition. The rocket ejects a cluster of 
+projectiles on impact and spreads their explosive content on the heads of your enemies.
+[end]
+
+name_missile/baracuda = Barracuda
+[text = desc_missile/baracuda]
+Slow but powerful homing missiles. They fire in pairs above and below the ship. 
+Agility is worse compared to its lighter competitor on the market, but these ones pack a lot more punch.
+[end]
+
+name_missile/comet = Comet
+[text = desc_missile/comet]
+Comets are small agile missiles which are deployed on a curved trajectory. This allows the pilot to bombard enemies while staying off their line of fire.
+[end]
+
+name_missile/flea = Flea Circus
+[text = desc_missile/flea]
+Classic side deployed missiles with delayed ignition. The feature allows the pilot to deploy the rockets farther from the ship and to cover wider area on the battlefield.
+[end]
+
+name_missile/hailstorm = Hailstorm
+[text = desc_missile/hailstorm]
+Experimental homing rockets equipped with micro-blasters. Not only they follow your enemies, but they also shoot at them while in the air. 
+[end]
+
+name_missile/helix = Helix
+[text = desc_missile/helix]
+Heavy missiles with a lot of explosive power. They twirl on a helix path in front of the ship to confuse the enemies and catch them in the final dance of death.  
+[end]
+
+name_missile/homing = Homing Missiles
+[text = desc_missile/homing]
+Laser guided missiles are good and reliable side weapon. They offer reasonable speed and power and their target seeking ability 
+allows the pilot to "fire and forget". A weapon choice that no one ever regrets.   
+[end]
+
+name_missile/incubus = Incubus 
+[text = desc_missile/incubus]
+Fast and rapidly fired non-guided missiles. These small stingers are fired from special launch cylinders which can deploy 
+hundreds of them in a very short time. Lack of power is more than compensated for by the large number of the projectiles.
+[end]
+
+name_missile/mamba = Red Mamba
+[text = desc_missile/mamba]
+Weird experimental missiles with a rudimentary homing ability. They use actual snake brains as a guiding system.
+Erratic movement of the missiles combined with high fire rate make them somewhat useful against big groups of weaker enemies.
+[end]
+
+name_missile/nova = Nova
+[text = desc_missile/nova]
+Nova missiles carry a very flammable substance that self-ignites after a short flight and
+creates highly damaging horizontal line of fire and energy.
+[end]
+
+name_missile/phoenix = Phoenix
+[text = desc_missile/phoenix]
+Phoenix missiles are unique air-to-ground system. Special bent trajectory makes them plummet towards the ground shortly after the release.
+Very effective against ground enemies and buildings. 
+[end]
+
+name_missile/raptor = \6Raptor
+[text = desc_missile/raptor]
+fixme
+[end]
+
+name_missile/rodeo = Rodeo
+[text = desc_missile/rodeo]
+Rodeo missiles boost the defense of your ship. They circle around their start position quickly, killing any enemy fighter stupid enough to get close to you.
+[end]
+
+name_missile/swarm = Swarm
+[text = desc_missile/swarm]
+Swarm is a seek-and-destroy system based on a special microbot emitter. 
+The weapon is able to assemble thousands of microbot missiles with untraditional insect-like design in real time. 
+These microbots then seek nearby enemies and deliver loads of explosive and corrosive chemicals with their stingers.
+[end]
+
+name_missile/tigerfun = Tigerfun
+[text = desc_missile/tigerfun]
+Tigerfun is a high-tech missile with a disruptor field generator in its warhead. The missile
+self-detonates after a short time, creating huge radius of disruptive energy that not only
+damages enemies but also evaporates enemy shots.
+[end]
+
+name_missile/trident = Trident
+[text = desc_missile/trident]
+Excellent and powerful secondary weapon system. Trident shoots cluster of three rockets upwards and downwards. This 
+is very helpful for bombardment of targets on the ground or ceilings, and also for attacking enemies while 
+staying out of their direct line of fire.
+[end]
+
+name_missile/yolka = Y-24 Yolka Missile
+[text = desc_missile/yolka]
+Behold these rocket propelled happy trees from legendary weapon designer Rob Boss. 
+They bring a festive mood to your enemies for sure.
+\n\n
+\6"There's no annihilation, just happy accidents."
+[end]
+
+
+//------------------------------------------------------------------------------
+// BOMBS
+//------------------------------------------------------------------------------
+
+name_bomb/acid_cloud = Acid Cloud
+[text = desc_bomb/acid_cloud]
+This dangerous bomb is filled with highly corrosive substance, able to chew right through any panzer. 
+The bomb has a timer and explodes mid-air, releasing cloud of chemicals that stays in place for a while. 
+The cloud rains acidic liquid down upon poor enemies who happen to wander under it. 
+[end]
+
+name_bomb/acid_storm = Acid Storm
+[text = desc_bomb/acid_storm]
+Advanced version of Acid Cloud carries improved chemical formula for it's corrosive load. Not only the bomb
+releases acidic cloud able to melt enemies' plating, but the chemical reaction in the cloud also generates 
+eletricaly charged particles able to release violent destructive discharges.  
+[end]
+
+
+name_bomb/start = B-1 Bombs
+[text = desc_bomb/start]
+B-1s are the cheapest weakest bombs on the market. They are usually given for free as a part of a starter pack with every new jet fighter.
+[end]
+
+name_bomb/baker = Baker
+[text = desc_bomb/baker]
+Bakers have unique patented warheads that catapult several high temperature plasma balls out of the impact point and spread fire 
+and destruction farther around. It's the perfect barbecue tool!
+[end]
+
+name_bomb/banshee = \6Banshee
+[text = desc_bomb/banshee]
+fixme banshee desc
+[end]
+
+name_bomb/friday = Black Friday
+[text = desc_bomb/friday]
+Black Fridays has a special shape and mechanism to create strong directional explosions. It's perfect for building busting as it can easily 
+pierce through several layers of the structure. Not so effective against troops and vehicles.
+[end]
+
+name_bomb/cauldron = Cauldron
+[text = desc_bomb/cauldron]
+The special high energy explosives in the Cauldron bombs unchains massive \0shock waves\2 following any surface they hit.
+This is super effective against infantry and other ground targets like trucks, tanks and walking machines.
+[end]
+
+name_bomb/disco = Discoteque 3000
+[text = desc_bomb/disco]
+Small and densely packed bombs are dropped in huge numbers for constant destructive lashing of ground targets.
+Discoteque is perfect for carpet bombing without worrying about precise targeting.
+[end]
+
+name_bomb/dragonball = Dragonball
+[text = desc_bomb/dragonball]
+This ingenious destruction machine drops a massive and highly durable sphere containing powerful heat generator
+and tracking device. The sphere rolls on the ground, trying to follow the ship and destroying everything in its path
+both by its crushing weight and scorching temperature.
+[end]
+
+name_bomb/pig = General P.I.G.
+[text = desc_bomb/pig]
+A massive submunition bomb with a short timer that makes it detonate mid-air. 
+Upon explosion the bomb releases a barrage of devastating secondary projectiles.
+[end]
+
+name_bomb/raven = Rave - N
+[text = desc_bomb/raven]
+This killer queen of a bomb is the one and only option that can provide you a dynamite with a laser beam - 
+a very unique combination of explosive generator that shoots destructive beams on impact. Guaranteed to blow your mind.
+[end]
+
+name_bomb/hells_bells = Hell's Bells
+[text = desc_bomb/hells_bells]
+These barrels are full of highly flammable chemicals that ignite immediately after the impact. All consuming fire spreads quickly in a wide 
+area and generates extreme temperatures and toxic gases.
+[end]
+
+name_bomb/johnson = Holly Johnson
+[text = desc_bomb/johnson]
+On impact this robust bomb releases strong anti gravitational wave that sends all objects within the range flying high.
+Ejected object are not only incapacited, but also easier targets to pick up as they are helplessly whizzing through the air.
+[end]
+
+name_bomb/mine = Mine Deployer
+[text = desc_bomb/mine]
+This weapon drops mines periodically behind the ship leaving a deadly presence for any incoming enemy.
+Upon activation the mines can track and follow nearby enemies. 
+[end]
+
+name_bomb/maniac = Monkey Maniac
+[text = desc_bomb/maniac]
+These bombs contain an advanced explosion control system, which can focus the enormous energy of the blast in one
+direction. The explosion throws the energy up in a column of destructive fire, melting down anything in its way.
+[end]
+
+name_bomb/thumper = \6Thumper RB-500
+[text = desc_bomb/thumper]
+fixme thumper desc
+[end]
+
+name_bomb/time_bomb = \6Time Bomb
+[text = desc_bomb/time_bomb]
+fixme time_bomb desc
+[end]
+								 
+name_bomb/subzero = \6Subzero
+[text = desc_bomb/subzero]
+fixme subzero desc\n\n
+[end]
+
+name_bomb/travolta = Travolta
+[text = desc_bomb/travolta]
+These high-tech bombs eject a fan of electrically charged particles that fly around and bounce repeatedly while frying every target within their reach.
+[end]
+
+name_bomb/gift = Niespodzianka sQ
+[text = desc_bomb/gift]
+Grzeczny czy nie? zdecydowanie niegrzeczny!
+[end]
+
+name_bomb/vandal = Vandal
+[text = desc_bomb/vandal]
+Vandals are your basic bomb option for beginners and casual destroyers. They offer solid power for a reasonable price. 
+Give them a go, make something go boom!
+[end]
+
+//------------------------------------------------------------------------------
+// GUNBOTS
+//------------------------------------------------------------------------------
+name_gunbot/xenon = Xenon Gigablaster
+[text = desc_gunbot/xenon]
+Xenon is one of the popular gunbots on the market, built by a small weapon manufacturer \0Ballistic Brothers\2.
+Gunbots are special weapons deployed from ship's bomb bay in a separate gondola. It follows the ship around.
+You lose the ability to use bombs, but gain an extra side weapon (which also generates no heat).
+[end]
+
+name_gunbot/godfinger = Godfinger 
+[text = desc_gunbot/godfinger]
+Originally a prop in the legendary movie \0GOD III - Attack of the mutated bimbo skeletons\2.
+Giant hand sculpture contains its own power source and lightning generator. 
+It was used for scenes, where the protagonist showed its wrath to the other characters. 
+Now it can be used to incinerate enemies as well.  
+[end]
+
+
+//------------------------------------------------------------------------------
+// DEVICES
+//------------------------------------------------------------------------------
+
+
+// mana spenders
+
+name_device/arcaball = \7Arcaball AX-300
+quickinfo_device/arcaball = Releases destructive bouncing balls.
+[text = desc_device/arcaball]
+Originally a part of a construction machinery designed to bring down buildings. 
+It turned out to be a nightmare to use for its huge collateral  damage, but was 
+quickly adopted for military purposes and upgraded with explosives that ignite 
+on every impact.
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+name_device/bounce_x = \7Bounce-X
+quickinfo_device/bounce_x = Fires salvo of lightning shots in four directions. 
+[text = desc_device/bounce_x]
+Electrocuting the whole battlefield was never easier! Bounce-X releases salvo of highly charged
+energy balls that rebound from anything they hit, passing jolt of millions of Volts on every impact.
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+name_device/energy_barrier = \7Energy Barrier
+quickinfo_device/energy_barrier = Rises inpenetrable barrier for a short time.
+[text = desc_device/energy_barrier]
+For a few seconds Energy Barrier creates an arc of inpenetrable force field 
+that completely isolates ship from incoming projectiles and beams.
+Upgrades make the barrier last longer and also add more barriers in different directions. 
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+name_device/mana_blast = \7Power Blast ST-II
+quickinfo_device/mana_blast = Sends powerful energy blast forward.
+[text = desc_device/mana_blast]
+SunTEQ's second edition Power Blast is a staple of the offensive devices. 
+Używa antymaterii to produce devastating plasma projectile 
+that pierces through all enemies. The projectile has limited reach,
+but crushing power that scales with ship's overall power level.    
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+name_device/double_dragon = \7Double Dragon
+quickinfo_device/double_dragon = Damage of all weapons is multiplied for a short time.
+[text = desc_device/double_dragon]
+Special charger can energize shots and beams of the ship to absurdly high levels.
+The effect can be sustained for only a limited amount of time, but the power increase is devastating.
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+name_device/mr_shock = \7ShockWave
+quickinfo_device/mr_shock = Clears shots and missiles around the ship while damaging all within the range.
+[text = desc_device/mr_shock]
+ShockWave is a commercial disruptor field generator. The device will generate a strong radial
+pulse that hits all targets around the ship with a powerful energetic wave. It also evaporates all
+incoming shots and rockets. 
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+name_device/hull_boost = \7Doładowanie kadłuba
+quickinfo_device/hull_boost = Odnawia PW statku.
+[text = desc_device/hull_boost]
+Wtłacza antymaterię do zewnętrznych generatorów integralności kadłuba statku. 
+To pomaga przywrócić PW oraz zapewnia większą odporność na obrażenia przez ograniczony czas.  
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+name_device/rocketeer = \7Rocketeer
+quickinfo_device/rocketeer = Fires missiles on every enemy in range.
+[text = desc_device/rocketeer]
+Rocketeer is basicaly a cloning device on steroids. It takes whatever missiles are installed on board
+and fires a batch of their clones on every enemy target within the range of the ship. 
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+name_device/megabomb = \7Megabomb
+quickinfo_device/megabomb = Next batch of bombs have supercharged load.
+[text = desc_device/megabomb]
+Uses antimmater to drasticaly improve power of the next batch of bombs. Bombs release destructive particles on impact.
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+
+name_device/total_cooler = \7Total Cooler
+quickinfo_device/total_cooler = Freezes the ship for a short period of time.
+[text = desc_device/total_cooler]
+This massive cryo-generator can, for a very short period of time, completely eliminate all heat on ship.
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+name_device/time_compressor = \7Time Compressor
+quickinfo_device/time_compressor = Slows down time for a moment.
+[text = desc_device/time_compressor]
+Time Compressor is a time buffering device that can be mounted to a ship's engine and create a temporal bubble
+for a few seconds. The ship maintains its speed while everything else around slows down significantly, which
+gives a pilot a huge advantage in battle.  
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+name_device/armageddonator = \7Armageddonator
+quickinfo_device/armageddonator = Emmits powerful beam of energy.
+[text = desc_device/armageddonator]
+This is the most powerful antimatter cannon in the known universe. The device releases column
+of destructive energy that last several seconds and blasts through any obstacle in front of the ship.
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+name_device/kaboom = \7Kaboom
+quickinfo_device/kaboom = Detonates all drones.
+[text = desc_device/kaboom]
+Installs powerful explosives on all drones and a detonator on the ship. The pilot is now able to detonate the drones
+and hit everything within their reach.
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+
+name_device/gravity_hole = \7Gravity Hole
+quickinfo_device/gravity_hole = q
+[text = desc_device/gravity_hole]
+Fixme! gravity_hole desc
+\n\n\7To urządzenie zużywa antymaterię.
+[end]
+
+
+
+
+
+
+// no-mana devices
+
+name_device/flipper = FTS-1 Flipper 
+quickinfo_device/flipper = Flips the ship. 
+[text = desc_device/flipper]
+This latest product from \0Physics? Who Cares! Inc.\2, a renowned manufacturer of space technologies, 
+is the ultimate challenge for any pilot. Intricate system of tiny stabilizing jets and computer-assisted 
+maneuvering allows you to flip the ship and move it around in the most unnatural positions. 
+Nobody will be able to match your agility on the battlefield!
+[end]
+
+name_device/focus = Focus
+quickinfo_device/focus = Moves the center of your fields and drones away from your ship. 
+[text = desc_device/focus]
+\0Focus device \2is able to eject the core of your field generators in front of the ship.
+Any aura effect and also any drone, that is attached to you by a magnetic field,
+can now be pushed forward to block and engage your enemies, while you hover in
+safe distance.
+[end]
+
+name_device/loadout_swapper = Loadout Swapper
+quickinfo_device/loadout_swapper = Allows to swap the current loadout with the first one in the cargo bay while in combat.
+[text = desc_device/loadout_swapper]
+Loadouts are important tool for any accomplished mercenary, but what if you could do better? 
+What if you could swap them right in the heat of battle? That's exactly what this ingenious device provides! 
+[end]
+
+
+name_device/drone_radius = Repulsor
+quickinfo_device/drone_radius = Gives ability to change distance of the drones.
+[text = desc_device/drone_radius]
+Through alteration of electromagnetic fields this device is able to change distance of all drones
+that follow the ship. Pilots can use wide spread mode for more offensive strategy or tight formation to
+enhance ship's protection from incomming missiles and bullets.
+[end]
+
+
+name_device/remcon = Remcon
+[text = desc_device/remcon]
+Remcon
+[end]
+
+name_device/jetpack = Jet Pack Rescue
+quickinfo_device/jetpack = Allows the pilot to eject from the ship.
+[text = desc_device/jetpack]
+JPR allows the pilot to eject from the ship on command in a specialized rocket chair. You take the ship's main weapon with you.
+The device is connected to Mercenary Assisstant System, so after a short wait, the company will send you a copy of your ship
+as a replacement. Please do not abuse the assistance system to use the abandoned ship as a projectile! 
+[end]
+
+name_device/rotary_cage = Obrotowa Klatka
+quickinfo_device/rotary_cage = Pilot może przekręcić obie poboczne bronie przednie. 
+[text = desc_device/rotary_cage]
+To ulepszenie luków dział pozwala pilotowi zmienić kąt strzału górnej przedniej oraz dolnej przedniej broni.
+Pilot może przełączać pomiędzy różnymi ustawieniami celowania z zakresu od "prosto" do "pod kątem 45 stopni wstecz".  
+[end]
+
+name_device/shrinker = Zmniejszacz
+quickinfo_device/shrinker = Zmniejsza rozmiar statku.
+[text = desc_device/shrinker]
+Zmniejszacz jest specyficznym i wyjątkowym urządzeniem bojowym. Wykorzystuje \0HAM-12 generator chomikizacji\2, który może przełączać statek między dwoma trybami. 
+W "schomikizowanym" trybie statek znacznie traci na rozmiarze oraz zyskuje na prędkości by być zwinniejszym i o wiele trudniejszym do trafienia. 
+Może przecisnąć się przez ciasne korytarze i nieprzyjemne sytuacje. Jednakże, zmniejszony rozmiar również osłabia każdą broń o 50%. 
+[end]
+
+
+
+//------------------------------------------------------------------------------
+// EQUIPMENT
+//------------------------------------------------------------------------------
+
+
+
+
+name_equipment/am_generator = A.M. Generator
+quickinfo_equipment/am_generator = Generates antimatter over time.
+[text = desc_equipment/am_generator]
+A.M. Generator is safe and reliable way to create antimatter on your ship. Whether you need it
+to make a bomb, impress your friends and colleagues or to power your offensive \0U.L.T.R.A. devices\2, 
+A.M. Generator is here to help. And the newest SafeGuard(tm) technology lowers the chance  
+to go supernova to minimum! You really can't miss with this one!    
+[end]
+
+name_equipment/armor = Armor
+quickinfo_equipment/armor = Strenghthens hull integrity.
+[text = desc_equipment/armor]
+Additional armor plating improves \0hull integrity\2 (hit points) of your ship and allows you to withstand more damage.	
+[end]
+
+name_equipment/blast_projector = Blast Projector
+quickinfo_equipment/blast_projector = Teleports clones of the shots from your \1main weapon\0 to all your drones. 
+[text = desc_equipment/blast_projector]
+The Blast Projector's chamber is connected to your \1main weapon\2 to catch its shots. 
+It creates multidimensional split between the ship and your nearby \0drones\2. 
+Any matter or energy traveling through the chamber is copied and teleported on the drones' position. 
+With enough drones you can use this effect to literally multiply your firepower. 
+[end]
+
+name_equipment/bomb_duplicator = Bomb Duplicator
+quickinfo_equipment/bomb_duplicator = Duplicates all dropped bombs.
+[text = desc_equipment/bomb_duplicator]
+Originally created by Sigma-5 crime syndicate to multiply gold, drugs and prostitutes, duplicating technology quickly 
+found popularity in military circles as it can copy everything - including bombs! Rumors of occasional materialization 
+of live ordnance in the pilot's cabin are nothing but lies of the competing manufacturers!  
+[end]
+
+name_equipment/presto_blasto = Presto Blasto
+quickinfo_equipment/presto_blasto = Spawns a mine in place of a killed enemy. 
+[text = desc_equipment/presto_blasto]
+Presto Blasto desc
+[end]
+
+name_equipment/buzzsaw = Buzzsaw
+quickinfo_equipment/buzzsaw = Improves collision damage of all drones that you control.
+[text = desc_equipment/buzzsaw]
+Buzzsaw is a popular choice of many close combat enthusiasts. This upgrade adds large
+circular saw blades to all your \0drones\2, thus improving their melee damage.
+Cutting power of these massive metal discs is truly phenomenal. 
+//As one of the space gladiators like to say: \n\6"It has to split!"
+[end]
+
+name_equipment/carnage_tv = Carnage TV
+quickinfo_equipment/carnage_tv = Zapewnia dodatkową gotówkę za wyrzynanie wrogiej piechoty. Im więcej zabijesz naraz, tym większa nagroda.
+[text = desc_equipment/carnage_tv]
+With this transmitter onboard you become part of a pangalactic reality show on Carnage TV channel. 
+As a licensed hunter in this brutal sport, you will kill for entertainment of more than 7 trillion viewers. 
+The audience votes for the favorite slayer, so you can earn extra money for every bloodbath you cause. 
+[end]
+
+name_equipment/central_heat_sink = Central Heat Sink
+quickinfo_equipment/central_heat_sink = Slows down overheating of the ship.
+[text = desc_equipment/central_heat_sink]
+Central Heat Sink system slows down heat generation from all weapons on the ship. 
+[end]
+
+name_equipment/circulus = Circulus
+quickinfo_equipment/circulus = Deploys defensive drones that circle around the ship.
+[text = desc_equipment/circulus]
+Circulus holds large tromium balls in a magnetic field around the ship. This metal
+is nearly indestructible, so the balls can be used either as a shield against incoming projectiles
+or as a melee weapon, if you dare to get close enough to your enemies.
+[end]
+
+name_equipment/cooling_fan = Cooling Fan
+quickinfo_equipment/cooling_fan = Speeds up heat dissipation. 
+[text = desc_equipment/cooling_fan]
+There are two ways to fight overheating of the ship. Either you slow down build up of the heat, or you speed up its dissipation.
+With this upgrade you can do the latter. 
+[end]
+
+name_equipment/demolisher = Demolisher
+quickinfo_equipment/demolisher = Destruction of buildings is now detected as kill of an enemy. 
+[text = desc_equipment/demolisher]
+This small device can be connected to the ship's central computer and bypass its systems of kill detection.
+With this onboard, any destruction of a building is falsely reported as a kill of an enemy. 
+Such change affects all systems on the ship that link their function to killing of enemies.   
+[end]
+
+name_equipment/device_connector = Device Connector
+quickinfo_equipment/device_connector = Triggers both devices simultaneously. 
+[text = desc_equipment/device_connector]
+Device Connector intertwines both device slots in such manner that they are able to fire
+simultaneously on one tank of antimatter. This results in huge raise of power but loss of control
+over single device. 
+[end] 
+
+name_equipment/el_diablo = El Diablo
+quickinfo_equipment/el_diablo = Removes heat limits. You can also burn yourself with heat.
+[text = desc_equipment/el_diablo]
+This special little part gets attached to you ship's heat sink systems and removes all its safety limits.
+Highly illegal and also highly dangerous as your ship can go above 100 heat and never stops shooting.
+Eventually you start to burn, inflicting damage to your own ship.
+[end]
+
+name_equipment/fridge = Fridge
+quickinfo_equipment/fridge = Slows down overheating of your ship slightly.
+[text = desc_equipment/fridge]
+Nice vintage fridge gives your ship a little bit of cooling. Also, you can find a few cans of beer inside.
+[end]
+
+name_equipment/garbage_collector = Garbage Collector
+quickinfo_equipment/garbage_collector = Attracts bonuses and increases damage after picking them up.
+[text = desc_equipment/garbage_collector]
+fixme garbage_collector desc
+[end]
+
+name_equipment/gem_connector = G.E.M. Connector
+quickinfo_equipment/gem_connector = Connects all front G.E.M.s into the main weapon.
+[text = desc_equipment/gem_connector]
+This special network allows to connect all G.E.M.s from the front weapons into the main weapon. The ship loses ability
+to power up two side weapons, but gains ability to combine multiple effects of G.E.M.-boosting into a single weapon. 
+[end]
+
+name_equipment/harmonic_amplifier = Harmonic Amplifier
+quickinfo_equipment/harmonic_amplifier = Maxed out shield is boosting power of weapons.
+[text = desc_equipment/harmonic_amplifier]
+This neat little circuit is connecting ship's shield (if it has any) to the weapon energetic grid. Whenever the shield is charged to its maximum,
+it uses its power to energize weapons beyond their normal level. The effect is lost whenever the shield is hit and needs to use its generators to recharge.   
+[end]
+
+name_equipment/heat_valve = Heat Valve
+quickinfo_equipment/heat_valve = Every 5 seconds releases excess heat. 
+param_heat_valve_limit = Heat limit: @val
+[text = desc_equipment/heat_valve]
+Heat from weapons is always a problem on battle ships. Heat Valve system checks for inner temperature of the ship periodialy  
+and gets rid of it in fiery outburst. Very handy. The super hot flames can even be used to melt enemies. There is a downside.
+Valve needs extra openings in your hull, thus weakening its integrity.     
+[end]
+
+name_equipment/heavy_warheads = Heavy Warheads
+quickinfo_equipment/heavy_warheads = Increases damage from rockets and bombs.
+[text = desc_equipment/heavy_warheads]
+fixme heavy_warheads desc
+[end]
+
+name_equipment/helios_aura = Helios Aura
+quickinfo_equipment/helios_aura = Creates burning aura around the ship.
+[text = desc_equipment/helios_aura]
+It's basically a masive microwave adapted for battle usage. The generator creates strong heating aura in close proximity
+around the ship, which applies fire damage with a change to burn to any targets within reach.
+[end]
+
+name_equipment/hellfire = Hellfire Generator
+quickinfo_equipment/hellfire = Transfers heat into weapons' power.
+[text = desc_equipment/hellfire]
+Hellfire Generator draws energy from the ship's heat and uses it to improve the power of its weapons. 
+The more heat the ship generates, the more powerful the shots are.
+[end]
+
+name_equipment/mini_mine = Minimines 
+quickinfo_equipment/mini_mine = Every bomb bursts into minimines on impact.
+[text = desc_equipment/mini_mine]
+These clustered minimines can be inserted into \0bombs \2to significantly increase their
+deadly power. After the upgrade, every bomb splits into minimines on impact, generating 
+secondary explosions. Power of the minimines depends on the power of the parent bomb.  
+[end]
+
+name_equipment/mr_shark = Mr. Shark
+quickinfo_equipment/mr_shark = Spawns massive rocket on kill.
+[text = desc_equipment/mr_shark]
+
+[end]
+
+name_equipment/nanomachines = Nanomachines
+quickinfo_equipment/nanomachines = Repairs hull over time.
+[text = desc_equipment/nanomachines]
+Nanomachines are tiny automata which are released all over your ship and continuously 
+repair the hull on molecular level. They are connected to weaponary system, 
+thus stop working, when you are shooting. 
+[end]
+
+name_equipment/oppressor_field = Oppressor Field
+quickinfo_equipment/oppressor_field = Creates area of high damage.
+[text = desc_equipment/oppressor_field]
+Oppressor field emits short range disruptive waves that weakens significantly molecular bonds in matter.
+The field doesn't destroy enemies on its own, but greatly increase damage of affected targets should they be hit
+by other onboard weapons.
+[end]
+
+name_equipment/panic_attack = Atak Paniki
+quickinfo_equipment/panic_attack = Zwiększa moc statku, gdy PW spada poniżej 30.
+[text = desc_equipment/panic_attack]
+Piloci podczas walki często orientują się, że ich życie wisi na włosku, kiedy integralność kadłuba spada niebezpiecznie blisko zera. 
+Moduł Ataku Paniki pomaga. Kiedy kadłub statku zejdzie poniżej pewnej granicy, to wyposażenie omija wszelkie zabezpieczenia
+pokładowych systemów, znacznie zwiększając moc wszystkich broni. Niebezpieczna sztuczka, ale może dać 
+pilotowi dodatkową moc potrzebną do wydostania się z podbramkowej sytuacji.
+[end]
+
+name_equipment/quazitron = Quazitron Module
+quickinfo_equipment/quazitron = Everytime you collect HP you get antimatter instead.
+[text = desc_equipment/quazitron]
+Quazitron Module is a special energy converter that transforms all \0HP bonuses\2 into \0antimatter\2.
+You sacrifice the ability to fix damaged ship, but you greatly improve the energy input for your antimatter devices. 
+[end]
+
+name_equipment/shell_grenadeer = Shell Grenadier
+quickinfo_equipment/shell_grenadeer = Turns empty bullet shells into minibombs.
+[text = desc_equipment/shell_grenadeer]
+This bizzare invention of eco-fascistic terror group Happy Forest Mafia turns empty shells into explosive unstable matter. 
+It's one of their attempts to minimize waste production on their battle ships. Their other notable tech includes weaponized
+engine exhausts and crew poop. 
+[end]
+
+name_equipment/scavenger = Scavenger
+quickinfo_equipment/scavenger = Gives a chance to drop a tiny armor on enemy kill.
+param_scavenger_armor = Armor bonus: \1+5 \0HP
+[text = desc_equipment/scavenger]
+Scavenger is a special type of an automated repair unit. It scans destroyed enemy ships and tries to identify
+scraps amongst the debris that could be used to strenghthen your own hull integrity. 
+[end]
+
+name_equipment/set_enabler = Set Enabler
+quickinfo_equipment/set_enabler = Enables set bonus with only one set item on board.
+[text = desc_equipment/set_enabler]
+Super rare chip that is able to emulate missing set items. With this technology on board 
+you need to install only one item of a set to gain full set effect.    
+[end]
+
+name_equipment/shield = Tarcza
+quickinfo_equipment/shield = Blokuje obrażenia.
+[text = desc_equipment/shield]
+Nie da się uniknąć wszystkich kul w czasie ostrej bitwy! Tarcza jest tym dziełem technologii, 
+który wspiera cię pochłaniając znaczną porcję obrażeń. 
+[end]
+
+name_equipment/stingray_defender = Stingray Defender
+quickinfo_equipment/stingray_defender = Shoots a mini-rocket whenever your ship is hit.
+[text = desc_equipment/stingray_defender]
+Stingray is an ingenious combination of defence and revenge. This upgrade installs small 
+rocket launchers under the plates of the ship's armor. Whenever your ship is hit, 
+it opens and shoots tiny missiles right back at your enemies. Death for scratching the paint!
+[end]
+
+name_equipment/sulfuron_circuit = Sulfuron Circuit
+quickinfo_equipment/sulfuron_circuit = Increases fire damage.
+[text = desc_equipment/sulfuron_circuit]
+Sulfuron Circuit uses supercharged plasma to boost all fire damage inflicted by the ships weapons.
+Regardles whether is fire from bombs or burning caused by your high energy beams, all fire will burn hotter.
+Small price for the effect is an increased base heat of the ship due to heating from the upgrade.   
+[end]
+
+name_equipment/supercharged_bomb = Supercharger
+quickinfo_equipment/supercharged_bomb = All bombs have chance for lightning discharge on impact.
+[text = desc_equipment/supercharged_bomb]
+Powerful generator charges any bomb with massive amount of electromagnetic energy when dropped. The bomb has chance to discharge destructive lightning on contact. 
+[end]
+
+name_equipment/thundertron = Thundertron
+quickinfo_equipment/thundertron = Increases lightning damage.
+[text = desc_equipment/thundertron]
+All electric damage will be empowered thanks to the massive charges that can be created by this powerful generator. 
+[end]
+
+name_equipment/toxic_tank = Toxic Tank
+quickinfo_equipment/toxic_tank = Increases acid damage.
+[text = desc_equipment/toxic_tank]
+fixme toxic_tank desc
+[end]
+
+name_equipment/zeldor_panzer = Zeldor Panzer
+quickinfo_equipment/zeldor_panzer = Hull integrity: \110\0 HP\nAll incoming damage: \1-1\0 HP\nAll HP bonuses: \1+1\0 HP 
+[text = desc_equipment/zeldor_panzer]
+Experimental technology from Hiluran Armory uses so called "\0digitization of reality\2" for total conversion
+of the hull matrix on subatomic level. It forces fixed value of HP for the ship, but in exchange it equalizes 
+all incoming damage to exactly 1. Most pilots call it suicide, but some find it a very useful feature.  
+[end]
+
+name_equipment/zogon_insurance = Zogon Insurance
+quickinfo_equipment/zogon_insurance = Emergency armor pack,\nwhen hull becomes critical.\n\nCritical limit: \125\0 HP\nArmor bonus: \1+50\0 HP 
+[text = desc_equipment/zogon_insurance]
+Zogon's Insurance is a reliable partner for all space mercenaries. Their patented transmitter sends signal whenever 
+the ship's hull integrity gets criticaly low. The company then sends a delivery ship with a bonus armor.
+\n\1It takes a minute before another delivery is possible. 
+[end]
+
+
+
+//------------------------------------------------------------------------------
+// GEMS
+//------------------------------------------------------------------------------
+item_desc_gem = \n\n\4Gun Enhancing Mechanisms (G.E.M.) modify weapons or give them special abilities.
+
+name_gem/acidator = Acidator
+quickinfo_gem/acidator = Adds corrosive effect on a weapon.
+[text = desc_gem/acidator]
+A pattented special technology of Acidator adds highly acidic compound to the firing mechanism of a weapon.
+It allows to transfer the corrosive effect to bullets, beams or energy shots - it doesn't matter. 
+|item_desc_gem|
+[end]
+
+name_gem/mouse_aim = Aim Enhancer
+quickinfo_gem/mouse_aim = You can aim the weapon with mouse or the second controller stick. 
+[text = desc_gem/mouse_aim]
+With this clever machinery connected to a weapon slot, you can freely point the weapon 
+to any direction you wish. You can do so with either mouse or right stick of the controller. 
+|item_desc_gem|
+[end]
+
+name_gem/anarchon = Anarchon
+quickinfo_gem/anarchon = Greatly increases damage, but scatters aiming.
+[text = desc_gem/anarchon]
+Massive power generator greatly increases damage, but makes the weapon highly unstable.
+The aim of the weapon can divert up to 45 degrees from the regular aiming angle. 
+|item_desc_gem|
+[end]
+
+name_gem/angler_mangler = Angler Mangler
+quickinfo_gem/angler_mangler = Increases damage according to the angle of impact. 
+[text = desc_gem/angler_mangler]
+Creates high energy field which gives bonus damage to the shots based on their direction.
+Maximum damage boost is applied to the shots that are directly above or below the ship.
+|item_desc_gem|
+[end]
+
+name_gem/autotrack = Autotracker
+quickinfo_gem/autotrack = The weapon aims automatically at the nearest enemy.
+[text = desc_gem/autotrack]
+This small aiming computer gives auto-aiming ability to the connected weapon.
+It will automatically lock on and follow the nearest enemy, while you can fully 
+concentrate on dodging incoming projectiles.
+|item_desc_gem|
+[end]
+
+name_gem/criterion = Criterion
+quickinfo_gem/criterion = First hit to a undamaged target does a strongly enhanced damage.
+[text = desc_gem/criterion]
+This specialized computer scans targets for weak points and tweaks shots of the
+weapon do deliver a crushing first blow. The first hit to an \1undamaged \2target 
+strongly multiplies the damage.
+|item_desc_gem|
+[end]
+
+name_gem/damage_booster = Damage Booster
+quickinfo_gem/damage_booster = Improves power of the weapon, but weakens the hull.
+[text = desc_gem/damage_booster]
+Shots and beams of the weapon travel through this electromagnetic tunnel, which increases their energy significantly.
+But it's massive power and vibrations compromise structural integrity of the ship.
+|item_desc_gem|
+[end]
+
+name_gem/dynamo = Dynamo
+quickinfo_gem/dynamo = Enemies killed by this weapon discharge strong lightning into nearby targets.
+[text = desc_gem/dynamo]
+If a weapon with this upgrade manages to kill an enemy, it creates a massive surge of energy,
+resulting in a powerful electric discharge. The power of the discharge depends on the power of your ship.
+//\n\6"Hey light head! Hey christmas tree!" 
+|item_desc_gem|
+[end]
+
+name_gem/furnator = Furnator
+quickinfo_gem/furnator = Adds burning effect on a weapon. 
+[text = desc_gem/furnator]
+This enhancement heats up anything that comes out of your weapon to high temperatures, 
+thus giving it the ability to ignite targets for \9burn damage\2 over time.
+But it also creates a lot of extra heat.
+|item_desc_gem|
+[end]
+
+name_gem/heat_sink = Heat Sink 
+quickinfo_gem/heat_sink = Lowers heating of the weapon.
+[text = desc_gem/heat_sink]
+Basic cooling system that reduces heat radiation from the weapon.
+|item_desc_gem|
+[end]
+
+name_gem/magnetrix = Magnetrix
+quickinfo_gem/magnetrix = Shots follow movement of the ship.
+[text = desc_gem/magnetrix]
+Magnetrix is an unusual upgrade based on tractor beam technology. It creates a link between the ship
+and the shots fired. Shot streams follow the ship around and behave more like beams than
+separate bullets.  
+|item_desc_gem|
+[end]
+
+name_gem/equalizer = Equalizer
+quickinfo_gem/equalizer = Matches DPS of the weapon to the strongest weapon onboard.
+[text = desc_gem/equalizer]
+Equalizer scans equipment of the ship and mirrors the power output of the strongest weapon onboard. 
+Use it to combine the strength of the big guns with the unique features of the less powerful weapons on the market.
+|item_desc_gem|
+[end]
+
+name_gem/missile_hit = Missile Buster
+quickinfo_gem/missile_hit = Shots get ability to hit and destroy enemy missiles.
+[text = desc_gem/missile_hit]
+This combination of electronic system and tracking device gives your weapon ability to hit enemy missiles 
+mid air and destroy them. No more endless dancing and dodging with those pesky homing projectiles!
+|item_desc_gem|
+[end]
+
+name_gem/muon_time_ring = Muon Time Ring
+quickinfo_gem/muon_time_ring = Makes shots with limited life time to exist longer.
+[text = desc_gem/muon_time_ring]
+Shots passing through this ring are exposed to relativistic effects, which makes them exist longer. 
+This is useful for weapons with quickly decaying shots as it can increase their reach.   
+|item_desc_gem|
+[end]
+
+name_gem/vampirion = Vampirion
+quickinfo_gem/vampirion = Drains energy from hit enemies to recover your HP.
+[text = desc_gem/vampirion]
+Vampirion is based on alien technology of energy transfers. It gives the weapon ability
+to drain small packets of energy from the targets, and use them to strengthen your hull integrity.
+|item_desc_gem|
+[end]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------------------------------------
+// OTHER
+//------------------------------------------------------------------------------
+
+name_other/gumball_trophy = Gumball Trophy 
+quickinfo_other/gumball_trophy = A prize for winning Galactic Gumball Race. 
+[text = desc_other/gumball_trophy]
+Cheap looking artefact that serves as a trophy for infamous Galactic Gumball Race.
+Crudely made of low quality plastic and painted to imitate metalic look.
+It seems hollow and something is rattling inside. 
+[end]
+
+name_other/crate = Pojemnik Bagażowy
+quickinfo_other/crate = Zamknięte pudło zawierające niezane dobra.
+[text = desc_other/crate]
+Standardowe komercyjne pojemniki bagażowe są zabezpieczone elektronicznymi zamkami. Piraci zwykle sprzedają je zamknięte za niską cenę 
+z powodu wysokiego ryzyka samozniszczenia przy dłubaniu w zamku. Jest jednak możliwe włamanie przy użyciu specjalnego narzędzia hakerskiego zwanego \1Atarixem\2.  
+[end]
+
+name_other/crate_debris = Zgliszcza Bagażu
+quickinfo_other/crate_debris = Zniszczony pojemnik bagażowy. Jest bezwartościowy.
+[text = desc_other/crate_debris]
+Ktoś bezskutecznie bawił się zamkiem of tego pojemnika bagażowego. Pudło uległo samozniszczeniu i spaliło zawartość.
+[end]
+ 
+name_other/atarix = Atarix 2000
+quickinfo_other/atarix = Mały komputer umożliwiający otwieranie zabezpieczonych pojemników bagażowych.
+[text = desc_other/atarix]
+Atarix jest małym, lecz poręcznym komputerem zdolnym odblokować zabezpieczone pojemniki bagażowe. 
+Drogocenne dobra są często ukryte w dobrze zabezpieczonych pudłach. To urządzenie może otworzyć je bez zbędnego ryzyka zniszczenia zawartości.
+[end]
+
+name_other/bounty_hunter = Bounty Hunter
+quickinfo_other/bounty_hunter = Marks pirate ships on the battlefield. Their destruction brings in extra profit. 
+[text = desc_other/bounty_hunter]
+With Bounty hunter license a pilot gains access to the Federal Police Registry and can 
+use its data to identify wanted pirates among the encountered ships. Destroying pirate ships  
+gives bonus score and reward. Its also possible to hunt down unique pirate bosses and bring them
+to the nearest official authority to receive the set prize on their heads.
+[end]
+
+name_other/xenoform = Xenoform
+quickinfo_other/xenoform = fixme xenoform
+[text = desc_other/xenoform]
+fixme xenoform desc
+[end]
+
+name_other/xenoform_egg = Xenoform Egg
+quickinfo_other/xenoform_egg = fixme xenoform_egg
+[text = desc_other/xenoform_egg]
+fixme xenoform_egg desc
+[end]
+
+name_other/greed_box = Greed Box
+quickinfo_other/greed_box = fixme greed_box
+[text = desc_other/greed_box]
+fixme greed_box desc
+[end]
+
+name_other/loadout = Loadout
+quickinfo_other/loadout = Stores info about the ship's configuration.\n\nYou can swap this with the current ship's loadout. 
+[text = desc_other/loadout]
+Loadout computer is a special item designed to store information about all weapons and equipment on the ship.
+With a press of a single button a pilot can restore configuration of all equipped items. It tries to pull the desired items 
+from your cargo. So if you sold some of them, it may end up with an incomplete item swap. 
+[end]
+
+
+
+
+
+
+
+name_other/duck = Gumowa Kaczuszka
+quickinfo_other/duck = Lipna Strzegąca Sekretnego Miejsca Drobiowa Istota. Możesz ją przehandlować.
+[text = desc_other/duck]
+\0Lipna Strzegąca Sekretnego Miejsca Drobiowa Istota \2powróciła!\n\n
+Możesz ją sprzedać za odrobinę dodatkowej gotówki. Może tym razem będzie jakiś super mega bonus za znalezienie ich wszystkich? 
+Może?  Kto wie. Znaczy - ja nie mam pojęcia. A nawet gdybym miał to bym nie powiedział. Wow, nadal to czytasz.
+To zadziwiające. Za dużo wolnego czasu do dyspozycji, mam rację?  
+[end]
+
+name_other/teddy = Miś   
+quickinfo_other/teddy =  Możesz go przehandlować.  
+[text = desc_other/teddy]
+Słodki mały pluszowy miś. Piszczy "rozwal tych cholernych drani!", kiedy go naciśniesz.
+[end]
+
+name_other/beer = Piwo
+quickinfo_other/beer = Możesz je wypić albo przehandlować.
+[text = desc_other/beer]
+Obrzydliwy, słaby browarek smakujący jak upłynnione rybie odchody. Po upadku imperium piwa Einhoff, to jest jedyne piwo 
+dostępne na galaktycznym rynku alkoholi, tym samym szeroko rozpowszechnione. Nastały smutne czasy.
+[end]
+
+name_other/hotdog = Wander-Wurst   
+quickinfo_other/hotdog =  You can trade it.   
+[text = desc_other/hotdog]
+The most common and succesful product of Wandewurst fast food company is widely considered disgusting and dangerous.
+The center piece of the assembly is made of Wander-Meat (tm), a matter recycled from waste product of hyper drives
+through advanced molecular manipulation. The bun is bulletproof and there is no sauce.    
+[end]
+
+name_other/robofish = Robo-ryba  
+quickinfo_other/robofish = Elektroniczny towarysz. Możesz go przehandlować.
+[text = desc_other/robofish]
+Elektroniczna zabawka o wątpliwej jakości i przydatności. Patrzy na ciebie pustym wzrokiem.
+[end]
+
+name_other/fanart_1 = Dzieło Sztuki 
+quickinfo_other/fanart_1 = Cenne dzieło sztuki. Możesz je przehandlować.\n\n\3Fan art od\nMateusza Wiśniewskiego
+[text = desc_other/fanart_1]
+Wycinek z wideorecenzji Sir Gurblxa Bulbrtrona:\n 
+\0"To arcydzieło nieznanego artysty późnej ery kwadroholograficznej dumnie ukazuje 
+zestawienie kruchej śmiertelności przeciwstawiającej się nieśmiertelnemu złu. Wieczna heroiczna utarczka
+człowieka walczącego... z machiną. Emm... z pralką..."   
+[end] //nie umiem lepiej tego kalamburu przetłumaczyć, bo 'pralka' po polsku nijak nie posiada 'maszyny' w sobie
+
+
+
+
+
+name_other/welcome = Wizytówka  
+quickinfo_other/welcome = Stara ulotka w marnym stanie, pokryta wszelkiej maści plamami. Musiała być w wielu rękach, mackach i innych typach kończyn.
+
+[text = desc_other/welcome]
+Welcome to \1Jets'n'Guns 2 hypershopping\2! Basic tips:\n\n 
+> Buying and selling prices are the same, so experiment!\n  
+> Spend all your money. Even weak gun adds power.\n 
+> Get \1DPS\2 (damage per second) as high as possible.\n 
+> \1HP\2 (hit points) represents "health" of the ship.\n
+> Press \1MISSION\2 button on top to start the next mission! 
+[end]
+
+welcome_card_1 = Your money
+welcome_card_2 = Items you own. 
+welcome_card_3 = Items offered\nby the shop.
+welcome_card_4 = Details about the selected item.
+welcome_card_5 = Weapon and equipment on your ship.   
+
+name_other/xmas_voucher = Kupon Mikołaja  
+quickinfo_other/xmas_voucher = Niespodzianka!
+[text = desc_other/xmas_voucher]
+Otrzymałeś ten wyjątkowy mikołajowy kupon na darmowy przedmiot za zgromadzenie 
+wystarczającej ilości świątecznych przentów w tajnym \1miłokajkoworozwałkowym\2 poziomie! Odbierz nagrodę!
+[end]
+
+
+
+
+
+
+
+
+//------------------------------------------------------------------------------
+// ITEM PARAMS
+
+item_duplicity = \6Same item is already installed!
+
+//damage
+param_dps = DPS: @val@bonus
+param_collision_dps = Collision DPS: @val@bonus
+param_collision_dps_per_drone = Collision DPS: @val@bonus \0per drone
+param_damage = Damage: @val@bonus 
+param_bomb_damage = Bomb damage: @val@bonus 
+
+param_damage_from_total_dps = Power: \1@val\0 % of total DPS\nDamage: \1@total_dps_percent
+param_damage_from_bomb_damage = Damage: \1@bomb_damage_percent\n\0Power: \1@val\0% of bomb damage
+param_drone_collision_damage_bonus = Drone collision damage: @sig_val \0%
+
+param_hp_percent = PW: @sig_val \0%
+
+param_arcaball_count = Liczba kul: @val
+
+//factors
+param_damage_factor = Weapon damage: @sig_val \0%
+param_hero_damage_factor = Weapons damage: @val \0%
+
+param_heat_factor = Weapon heating: @neg_sig_val \0%
+param_fire_rate_factor = Weapon fire rate: @sig_val \0%
+param_life_time_factor = Weapon shot life: @sig_val \0%
+param_heat_to_damage_factor = @val\0% of heat as power boost
+param_panic_attack_factor = Power: @sig_val \0% 
+
+param_speed = Speed: @val 
+
+
+param_probability = Probability: @val\0% 
+param_ignition_probability = Ignition probability: @val\0% 
+
+param_chance_to_drop = Chance to drop: @val@bonus \0%
+
+param_stream_angle_random = Random arc: @val \0degrees
+param_anarchon_scatter = Scatter: \1+/- 45 \0degrees
+
+param_gem_vampirion_power = HP: \1+%vampirion_heal \0per hit
+param_criterion_factor = First hit boost: @val \0%
+param_angler_mangler_factor = Max damage boost: @sig_val \0% //Angler Mangler: Max @sig_val \0%
+
+param_rotary_cage_range = Angle range: \10 - @val
+
+//elements
+
+param_is_fire = \6Fire damage
+param_is_lightning = \6Lightning damage
+param_is_acid = \8Acid damage
+param_feature_chaining = \6Chain lightning
+
+param_no_weapon_for_gem = \4- //Weapon not found
+
+//param_burn_dps_bonus = Burn DPS: \1@weapon_dps_percent \n\0(\1@val\0% of weapon DPS) //zvyseni global burnu jako % ze sily zbrane (viz furnator)
+//param_burn_dps_bonus = Burn: \1@weapon_dps_percent \0(\1@val\0% of weapon DPS) //zvyseni global burnu jako % ze sily zbrane (viz furnator)
+param_burn_dps_bonus = Burn DPS: \1@weapon_dps_percent \n\0(\1@val\0% of weapon DPS) //zvyseni global burnu jako % ze sily zbrane (viz furnator)
+param_chance_to_burn = Szansa podpalenia: @val@bonus \0%
+param_chance_to_burn_bonus = Szansa podpalenia: @sig_val \0%
+
+param_acid_dps_bonus = Acid DPS: \1@weapon_dps_percent \n\0(\1@val\0% of weapon DPS)
+param_chance_to_acid = Chance to acid: @val@bonus \0%
+param_chance_to_acid_bonus = Chance to acid: @sig_val \0%
+
+param_chance_to_lightninig = Chance to lightning: @val@bonus \0%
+param_chance_to_lightninig_bonus = Chance to lightning: @sig_val \0%
+
+param_chance_to_wave = Chance to wave: @val@bonus \0%
+param_chance_to_wave_bonus = Chance to wave: @sig_val \0%
+
+
+//weapons
+param_fire_rate = Szybkostrzelność: @val@bonus \0/sec
+param_heat_per_sec = Nagrzewanie: @val@bonus \0/sec
+
+param_batch_size = Rozmiar serii: @val@bonus
+param_reload_delay = Czas przeładowania: @val@bonus \0 sec
+
+param_bomb_count = Turbodoładowane bomby: @val 
+param_missile_count = Rakiet na cel: @val 
+
+//hp & recovery
+param_hp_factor = PW: @sig_val \0%
+param_hp_recharge = Naprawa kadłuba: @sig_val \0PW/sek
+param_hero_cooling_factor = Chłodzenie: @sig_val \0%
+param_hero_heat_factor = Grzanie: @neg_sig_val \0%
+param_mana_recharge = Antymateria: @sig_val \0/sek
+
+param_max_burning_heat = Burning heat: @sig_val
+
+
+param_duration = Czas trwania: @val sek
+param_mana = Koszt antymaterii: @val
+
+//shield
+param_shield_max = Moc tarczy: @val \0PW
+param_shield_recharge = Odnawianie tarczy: @sig_val \0PW/sek
+param_shield_delay = Opóźnienie odnawiania: @val \0sek
+
+//misc
+param_hero_resistance = Odporność na obrażenia @val\0%
+param_mine_count = Miny: @val 
+param_drone_count = Drony: @val
+
+[text = param_gem/pyro_damage] 
+Fire damage @val \1/sec \0per shot
+[end]
+
+//------------------------------------------------------------------------------
+// ITEM SET PARAMS
+
+param_set_xmas = \8\nXmas set: Spawns reindeer harness in front of the ship. 
+param_set_kaiser = \8\nKaiser set: Adds large cannon turret. 
+
+//------------------------------------------------------------------------------
+
+//===== Shop Menu =====
+shop_label_price = Cena
+shop_label_item_descripion = \3Dane
+shop_tv_no_data = Proszę wybrać przedmiot...
+shop_panel_label_cargo = ŁADUNEK
+shop_panel_label_cash = KREDYTY
+shop_panel_label_pilot = PILOT
+shop_panel_label_shop = KOSMICZNY SKLEP
+
+shop_item_level = POZIOM
+shop_loadout = Konfiguracja
+shop_loadout_missing = - brak
+
+shop_summary_hp = HP
+//shop_summary_shield = Tarcza
+shop_summary_heat = Ciepło
+shop_summary_total_dps = DPS
+shop_summary_acid_dps = Kwas
+shop_summary_burn_dps = Ogień
+
+shop_mission_briefing_caption = Wstęp Misji
+shop_mission_level_data_caption = Dane o poziomie
+shop_mission_level_data_no_data = Brak dostępnych danych
+shop_planet_finish_count = WYGRANE
+shop_planet_secrets = SEKRETY
+shop_planet_completed = UKOŃCZONE
+
+shop_divider_weapon = \3BROŃ
+shop_divider_bomb = \3BOMBY
+shop_divider_MISSILE = \3RAKIETY
+shop_divider_equipment = \3WYPOSAŻENIE
+shop_divider_device = \3URZĄDZENIA
+shop_divider_gem = \3G.E.M.-y
+shop_divider_other = \3INNE
+
+//Big ship slots
+slot_front_guns = Broń Przednia
+slot_rear_gun = Broń Tylna
+slot_equipmen = Wyposażenie
+slot_missiles = Rakiety
+slot_bombs = Bomby
+slot_primary_device = Główne
+slot_secondary_device = Dodatkowe
+
+shop_no_offer = Brak oferty
+menu_customize_ship_title
+
+//Ship params - slider caption
+ship_param_body = Typ kadłuba
+ship_param_nose = Dziób
+ship_param_side = Skrzydło
+ship_param_side_position = Położenie skrzydła
+ship_param_engine = Ogień silnika
+ship_param_wings = Skrzydła
+ship_param_rudder = Ster
+ship_param_camouflage = Kamuflaż
+
+//Hero stats
+hero_stat_player_name = Pilot
+hero_stat_player_name_P2 = Piloci
+hero_stat_user_name = Użytkownik
+hero_stat_difficulty =  
+hero_stats_last_level = Ostatni poziom
+hero_stat_stage = Etap
+hero_stat_score = Wynik
+hero_stat_play_time = Czas gry
+hero_stat_death_count = Śmierci
+hero_stat_levels_finished = Poz. zaliczone
+hero_stat_boss_kill_count = Rozb. bossowie
+hero_stat_enemy_kill_count = Rozb. wrogowie
+hero_stat_man_kill_count = Rozb. piechota
+hero_stat_dmg_causing = Dmg zadane
+hero_stat_dmg_absorbed = Dmg przyjęte
+hero_stat_bonus_count = Bonusy
+hero_stat_fired_shots = Strzały oddane
+hero_stat_find_secret_count = Sekrety
+hero_stat_find_hitchhiker_count = Autostopowicze
+hero_stat_find_villain_count = Złoczyńcy
+
+hero_profile_new_game = nowa gra
+hero_profile_mia = M.I.A.
+hero_profile_cheater = OSZUST!
+
+//Buttons
+
+button_buy = Kup
+button_drink = Wypij
+button_exit = Wyjdź
+button_sell = Sprzedaj
+button_upgrade = Ulepsz \-\u2724 
+button_upgrade_symbol = \3\u2717\-
+button_downgrade = Pogorsz \-\u2725  
+button_downgrade_symbol = \3\u2716\-
+button_view = Pokaż
+button_open = Otwórz
+button_restart = Restartuj
+button_examine = Obejrzyj
+button_action_symbol = \3\u2716\-
+
+
+button_continue = KONTYNUUJ
+button_stay = ZOSTAŃ
+button_apply_loadout = ZASTOSUJ
+button_test_range = Poligon
+button_player_switch_1 = Gracz 1
+button_player_switch_2 = Gracz 2
+button_player_count_1 = Pojedynczy gracz //One Player
+button_player_count_2 = Kooperacja dwójki graczy
+button_game_mode = Tryb rozgrywki
+
+button_mission = MISJA
+button_shop = SKLEP
+button_profile = PROFIL
+button_options = USTAWIENIA
+button_end_campaign = WYJŚCIE
+
+button_continue_game = KONTYNUUJ
+button_new_game = ZACZNIJ GRĘ
+button_choose_profile = GRACZE //CHANGE PLAYER 
+button_quit_game = WYJDŹ Z GRY
+button_mods = MODY
+button_credits = AUTORZY
+button_start_level = LEĆ!
+button_web_page = INFORMACJE ZWROTNE
+button_leaderboards = RANKING
+
+button_player_count = Player count
+button_close = ZAMKNIJ
+button_back = WSTECZ
+button_next = DALEJ
+button_reset = RESET
+button_new_profile_create = STWÓRZ
+
+button_leaderboard_standard_1P = Standardowy 1Gr
+button_leaderboard_standard_2P = Standardowy 2Gr
+button_leaderboard_hardcore_1P = Hardcore'owy 1Gr
+button_leaderboard_hardcore_2P = Hardcore'owy 2Gr
+
+//custom item button
+
+button_get_reward = Odbierz nagrodę
+button_use_item = Użyj
+button_hack_item = Hackuj
+
+//OPTIONS
+options_tab_audio_video = AUDIO-VIDEO
+options_tab_game = ROZGRYWKA
+options_tab_controls = STEROWANIE
+
+options_music_volume = Głośność muzyki
+options_sfx_volume = Głośność efektów
+
+options_sound_panning = FX panning
+options_sound_panning_off = Wyłączone
+options_sound_panning_low = Niskie
+options_sound_panning_normal = Zwykłe
+
+options_mouse_sensitivity = Czułość
+
+options_fullscreen = Tryb pełnoekranowy
+options_vsync = V-sync
+options_warnings = Ostrzeżenia tekstowe
+options_hud_mode = Tryb HUD
+options_hud_mode_both = Oba
+options_hud_mode_big = Tylko duży
+options_hud_mode_mini = Tylko mały
+options_hud_mode_none = Wyłączone
+
+options_hero_colisoid = Obrys okrętu
+
+options_max_fps = Maks. FPS
+options_max_fps_unlimited = Nieograniczone
+
+options_font_size = Wielkość czcionki
+options_font_size_big = Duża
+options_font_size_small = Mała
+
+options_value_on = Tak
+options_value_off = Nie
+
+options_keyboard_profile = Klawiatura
+options_gamepad_profile = Gamepad
+options_mouse_profile = Mysz
+
+options_player_controls_1 = Kontroler 1
+options_player_controls_2 = Kontroler 2
+options_current_controller = Schemat kontrolera
+
+options_controller_keyboard = Klawiatura
+options_controller_gamepad = Gamepad
+options_controller_mouse = Mysz
+
+options_lod = Poziom detali
+options_lod_low = Niski
+options_lod_medium = Średni
+options_lod_high = Wysoki
+options_lod_full = Pełny
+
+options_quake = Trzęsienie kamery
+options_quake_off = Wyłączone
+options_quake_low = Niskie
+options_quake_normal = Zwykłe
+
+
+controls_up = Do góry
+controls_down = W dół
+controls_left = W lewo
+controls_right = W prawo
+controls_fire = Ognia
+controls_bomb = Bomba
+controls_device_1 = Urządzenie 1
+controls_device_2 = Urządzenie 2
+
+controls_press_wanted_key = Naciśnij docelowy klawisz
+controls_press_wanted_button = Naciśnij docelowy przycisk
+controls_controller_unplugged = Kontroler został odłączony!
+
+
+game_menu_start_level = ZACZNIJ POZIOM
+game_menu_shop = SKLEP
+game_menu_stats = STATYSTYKI BOHATERA
+game_menu_options = USTAWIENIA
+game_menu_end_campaign = OPUŚĆ KAMPANIĘ
+game_menu_resume_level = KONTYNUUJ
+game_menu_restart_level = RESTARTUJ
+game_menu_end_mission = ODWOŁAJ MISJĘ
+
+game_menu_button_yes = TAK
+game_menu_button_no = NIE
+
+game_menu_customize_ship = DOSTOSUJ OKRĘT
+
+//Mission completed stats
+mission_stat_title = MISJA UKOŃCZONA
+mission_stat_title_mia = \9ZAGINIONY W AKCJI
+mission_stat_medals = Medale
+mission_stat_top_score = Najlepszy wynik
+mission_stat_score = Wynik
+mission_stat_villains = Zdobyte nagrody
+mission_stat_no_bounty = brak licencji
+mission_stat_toxico = Wypłata Toxico
+mission_stat_no_toxico = niezainstalowane
+mission_stat_zogon = Ubezpieczenie Zogon's
+mission_stat_no_zogon = nie użyte
+mission_stat_profit = Zysk
+mission_stat_air_enemy_kill = Rozbite jedn. powietrzne 
+mission_stat_ground_enemy_kill = Rozbite jedn. naziemne
+mission_stat_man_kill = Rozbita piechota
+mission_stat_damage_caused = Zadane obrażenia
+mission_stat_damage_absorbed = Przyjęte obrażenia
+mission_stat_building_kill = Zniszczone budynki
+mission_stat_secrets = Znalezione sekrety
+mission_stat_bonuses = Podniesione bonusy
+mission_stat_shots_fired = Strzały oddane
+
+[text = yes_no_end_mision] 
+\1Czy na pewno chcesz\n
+zakończyć tę misję?
+[end]
+
+[text = yes_no_end_campaign] 
+\1Czy na pewno chcesz\n
+zakończyć twoją kampanię?
+[end]
+
+[text = yes_no_finish_campaign] 
+\1Czy wolisz 
+\n
+\3kontynuować\1 na większej trudności\n
+czy \3zostać\1 na tej samej?
+[end]
+
+[text = yes_no_quit_game] 
+\1Czy na pewno chcesz\n
+wyjść z gry?
+[end]
+
+[text = yes_no_delete_profile] 
+\1Czy na pewno chcesz\n
+usunąć ten profil?
+[end]
+
+[text = yes_no_reset_hero_profiles] 
+\1Czy na pewno chcesz\n
+zrestartować profil?
+[end]
+
+[text = mia_panel_desc_P1]
+	\2Po długiej i wiernej służbie, \1|player_name_1| \2poległ w boju.\n\n
+	Możesz zatrzymać ten profil jako wspomnienie jego przeszłych heroicznych czynów.\n\n
+	Możesz też zrestartować ten profil z takimi samymi ustawieniami i nazwą,
+	usuwając wszystkie inne jego dane.
+[end]
+
+[text = mia_panel_desc_P2]
+	\2Po długiej i wiernej służbie, \1|player_name_1| \2 oraz \1|player_name_2| \2polegli w boju.\n\n
+	Możesz zatrzymać ten profil jako wspomnienie ich przeszłych heroicznych czynów.\n\n
+	Możesz też zrestartować ten profil z takimi samymi ustawieniami i nazwami,
+	usuwając wszystkie inne jego dane.
+[end]
+
+//TV texts
+tv_dps = DPS
+tv_test_range = Press Start to Test range
+
+empty_gem/slo(empty)
+param_box_tag_selected = Wybrano
+param_box_tag_combine = Połącz
+
+//==== Main menu =====
+main_menu_created_by = \3Stworzone przez
+main_menu_player = Pilot
+main_menu_players = Piloci
+
+hint_main_continue = \3Kontunuuj poprzedni stan gry
+hint_main_new_game = \3Rozpocznij nową grę
+hint_main_new_game_disabled = \6Brak wybranego profilu bohatera
+hint_main_choose_profile = \3Wybierz profil bohatera
+hint_main_options = \3Pokaż ustawienia gry
+hint_main_quit = \3Opuść grę
+hint_main_credits = \3Pokaż listę autorów gry
+hint_main_mods = \6Modyfikacje nie są teraz dostępne
+hint_main_back = \3Wróć do Menu Głównego
+hint_main_select_full_profile = |key_select| \3aby wybrać, |key_delete| \3aby usunąć 
+hint_main_select_empty_profile = |key_select| \3aby wybrać
+hint_main_web_page_steam = \3Aktywuje Nakładkę Steam i otwiera stronę Dyskusji Społeczności
+hint_main_web_page_normal = \3Otwiera stronę wsparcia Rake in Grass w przeglądarce
+hint_main_leaderboards = \3Pokaż ranking
+
+//Screens
+mission_failed = PORAŻKA
+press_esc_to_return_to_shop = Naciśnij |key_esc| aby wrócić do sklepu
+press_esc_to_continue = Naciśnij |key_esc| aby kontynuować...
+press_any_key_to_continue = Naciśnij dowolny klawisz aby kontynuować...
+
+
+//Credits
+credits_0 = \1Jets'n'Guns 2
+credits_1 = \3Stworzone przez Rake in Grass
+credits_2 = \0Grafika i Projekt
+credits_3 = \3František "Undead" Chmelař
+credits_4 = \0Programowanie i Efekty specjalne
+credits_5 = \3Jiří "JP" Procházka
+credits_6 = \0Muzyka
+credits_7 = \3Machinae Supremacy
+credits_8 = \0Producent wykonawczy 
+credits_9 = \3Pavel "Tovy" Tovaryš
+credits_10 = \0Dodatkowe programowanie
+credits_11 = \3Štěpán "Stouie" Vondrák
+credits_12 = \0Szczególne podziękowania dla
+credits_13 = \3Petr Tovaryš\nVítězslav "Prochy" Procházka\nJiří Petřík\nDavid "Daveman" Fibiger
+
+//end credits
+
+ec_1_job = Gratulacje 
+ec_1_name = WYGRYWASZ! 
+ec_2_job = Rake in Grass 
+ec_2_name = z dumą przedstawia 
+//ec_3_job = 
+ec_3_name = JETS'N'GUNS 2 
+ec_4_job = Grafika i Projekt 
+ec_4_name = František "Undead" Chmelař 
+ec_5_job = Programowanie i Efekty specjalne
+ec_5_name = Jiří "JP" Procházka  
+ec_6_job = Muzyka 
+ec_6_name = Machinae Supremacy 
+ec_7_job = Producent wykonawczy 
+ec_7_name = Pavel Tovaryš 
+ec_8_job = Dodatkowe programowanie
+ec_8_name = Štěpán "Stouie" Vondrák 
+ec_9_job = Szczególne podziękowania dla 
+ec_9_name = Petr Tovaryš\nVítězslav "Prochy" Procházka\nJiří Petřík\nDavid "Daveman" Fibiger   
+//ec_10_job = 
+ec_all = oraz wszystkich którzy pomogli\ntestowaniem i sugestiami  
+ec_thanks = DZIĘKI ZA GRANIE!
+ec_esc = NACIŚNIJ 'ESC' ABY KONTYNUOWAĆ  
+
+
+
+//===== SHOP MENU =====
+hint_buy = \3Kup \1|item_name| \3za \1|item_price|
+hint_buy_and_install = \3Kup \1|item_name| \3i zamontuj do dostępnego gniazda \3(Płacisz \1|item_price|\4)
+hint_buy_and_replace = \3Kup \1|item_name| \3i zastąp przedmiot w bieżącym gnieździe  \3(Płacisz \1|item_price|\4)
+hint_buy_to_occupied_slot = \3Nie można zakupić przedmiotu |item_name|\3 do zajętego gniazda
+
+hint_sell = \3Sprzedaj \1|item_name| \3za \1|item_price|
+
+hint_apply_loadout = \3Zastosuj tę konfigurację
+
+hint_upgrade = \3Upgrade \1|item_name| \3to level |item_up_level| \3(You pay \1|item_up_price|\4)
+hint_no_upgrade = \6Item is on the highest level
+hint_downgrade = \3Downgrade \1|item_name| \3to level |item_down_level| \3(You earn \1|item_down_price|\4)
+hint_no_downgrade = \6Item is on the lowest level
+
+hint_sort_cargo = Sort cargo |key_sort|
+hint_toggle_gate = \3Toggle the gate 
+hint_cancel = \4Cancel selection
+hint_hide_item_view = Any key to close
+hint_install = \3Install \1|item_name| \3to free slot on the ship
+hint_incompatible_slot = \6Incompatible slot for \1|item_name|
+hint_incompatible_items = \6Incompatible items - unable to swap
+hint_no_room = \6No free slot on the ship for this item
+hint_place_to_slot = |key_action| Place \1|item_name| \3to slot
+hint_place_to_cargo = |key_action| Place \1|item_name| \3to cargo
+hint_play_level = \3Play selected level
+hint_remove = \3Uninstall \1|item_name| \3to the cargo
+hint_select = |key_select| Select item, |key_select_ctrl| Quick sell
+hint_select_shop = |key_select| Select item, |key_select_ctrl| Quick buy
+hint_swap = |key_action| Swap items
+hint_too_expensive = \6|item_name|\9 is too expensive (|item_price|)
+hint_too_expensive_upgrade = \6Upgrade is too expensive (|item_up_price|)
+hint_view = \4View item
+hint_use_item = \3Use \1|item_name| 
+hint_get_reward = \4Get reward
+hint_hack_item = Hack \1|item_name|
+hint_examine = Examine \1|item_name| 
+
+hint_test_range = \3Switch to test range
+hint_switch_players = \3Switch player profiles
+
+hint_scroll_shop = \3Scroll shop items
+hint_scroll_cargo = \3Scroll cargo items
+
+hint_top_button_1 = \3Switch to \1Mission \3screen
+hint_top_button_2 = \3Switch to \1Shop \3screen
+hint_top_button_3 = \3Switch to \1Hero Profile \3screen
+hint_top_button_4 = \3Show \1Options \3menu
+hint_top_button_5 = \3End campaign and return to \1Main menu
+
+//Shop hints
+hint_shop_tab_1 = \3Switch to \1Weapons, Bombs & Missiles
+hint_shop_tab_2 = \3Switch to \1Devices & GEMs
+hint_shop_tab_3 = \3Switch to \1Equipment
+hint_shop_tab_4 = \3Switch to \1Miscellaneous
+
+/*
+hint_mouse_shop_select = \3\u2711 to \1select\3 item    Ctrl+\u2711 to \1buy to cargo\3    Shift+\u2711 to \1buy and install
+hint_gp_shop_select = \3\u2716 to \1select\3 item    \u2720+\u2716 to \1buy to cargo\3    \u2721+\u2716 to \1buy and install
+*/
+//Cursor texts
+cursor_text_incompatible_slot = Incompatible slot
+cursor_text_incompatible_swap = Incompatible items
+cursor_text_too_expensive = Too expensive
+cursor_text_no_free_slot = No free slot
+cursor_text_max_upgrade = Max level reached
+cursor_text_min_downgrade = Min level reached
+cursor_text_full_slot = Slot is full
+cursor_text_no_room = No room //auto install to ship has no free slot for this item
+
+//--- ATARIX ---
+atarix_main_menu_bottom_text = (C) 128.23.5 Fried Brains Ltd. 
+atarix_main_menu_item_0 = Mortal Tetrix
+atarix_main_menu_item_1 = \0- empty - 
+atarix_main_menu_item_2 = \0- empty -
+
+atarix_hack_menu_item_0 = Start manual hack
+atarix_hack_menu_item_1 = Auto-hack (|hack_chance|% chance)
+atarix_hack_menu_item_2 = Cancel
+atarix_hackerman_bottom_text = Hit ACTION when two or more digits\nhave the same value. Zero out the code\nbefore time limit to open the lock.
+atarix_hackerman_connected = Lock connected...
+atarix_hackerman_hacking = Hacking...
+atarix_hackerman_timer = Time to self-destruct:
+
+//Tron
+atarix_tron_fail = FAILED...
+atarix_tron_win = UNLOCKED!
+atarix_tron_connected = Lock connected...
+atarix_tron_time_to_fialure = Time to failure
+atarix_tron_time_out = Time out!
+atarix_tron_hacking = Exploit all security weak points.
+atarix_tron_auto_hacking = Auto hacking...
+
+//--- TETRIX ---
+tetrix_menu_item_0 = New Game
+tetrix_menu_item_1 = Quit
+tetrix_score = SCORE
+tetrix_combo_used = USED
+
+tetrix_brick_name_raiden = RAIDER
+tetrix_brick_name_sub_zero = SUB-0
+tetrix_brick_name_scorpion = SKORPIO
+tetrix_brick_name_sonya = ZONYA
+tetrix_brick_name_johny_cage = JOHNY PAGE
+tetrix_brick_name_liu_kang = LIU CHANG
+tetrix_brick_name_kano = KHANO
+tetrix_brick_name_kung_lao = KUNG PAO
+tetrix_brick_name_sheeva = SHEEBA
+tetrix_brick_name_baraka = BAKARA
+tetrix_brick_name_mileena = MIREENA
+tetrix_brick_name_sindel = SHINDEL
+tetrix_brick_name_drax = BRAX
+tetrix_brick_name_cyrax = SYNTAX
+tetrix_brick_name_sektor = SEXTOR
+tetrix_brick_name_goro = GORORO
+
+tetrix_brick_combo_raiden = TELEPORT
+tetrix_brick_combo_sub_zero = FREEZE
+tetrix_brick_combo_scorpion = FLIP
+tetrix_brick_combo_sonya = AIR STRIKE
+tetrix_brick_combo_johny_cage = SHADOW KICK
+tetrix_brick_combo_liu_kang = FIREBALL
+tetrix_brick_combo_kano = CANNONBALL
+tetrix_brick_combo_kung_lao = HAT TOSS
+tetrix_brick_combo_sheeva = STOMP
+tetrix_brick_combo_baraka = SWIPE
+tetrix_brick_combo_mileena = RAVENOUS BITE
+tetrix_brick_combo_sindel = SONIC WAVE
+tetrix_brick_combo_drax = POWER STRIKE
+tetrix_brick_combo_cyrax = ENERGY NET
+tetrix_brick_combo_sektor = EXPLODE
+tetrix_brick_combo_goro = EARTHQUAKE
+
+tetrix_level = LEVEL
+tetrix_next = Next
+tetrix_game_over = GAME OVER
+tetrix_game_paused = PAUSED
+tetrix_leaderboard = -= HALL OF FAME =-
+tetrix_downloading_leaderboad = Leaderboards unavailable
+
+
+//--- Remcon ---
+remcon_hacking = HACKING
+remcon_deactivated = DEACTIVATED
+remcon_overload = OVERLOAD 
+remcon_weapons_down = WEAPONS DOWN  
+
+//--- WARNINGS ---
+
+warning_warning = Uwaga
+warning_boss = Wykryto wroga klasy Boss!
+warning_level_gigant = Alfa Gigantor został zrzucony!
+warning_level_impact = Lądowanie za...
+warning_level_3 = 3
+warning_level_2 = 2
+warning_level_1 = 1
+
+//--- BOSS names ---
+boss_name_roxtedy = RX-TDY - Bomber 
+boss_name_bebob = B-BOB - Myśliwiec
+boss_name_megatank = KONG 25 - Niszczyciel Pancerny
+boss_name_necro_titan = Tytan Nekrodroid
+boss_name_techno_kraken = Techno-Kraken
+boss_name_big_head = Głowa Gigantora
+boss_name_big_boot_left = Lewy But Gigantora 
+boss_name_big_boot_right = Prawy But Gigantora
+boss_name_queen_egg = Królowa Insektoidów - Jajo
+boss_name_queen_worm = Królowa Insektoidów - Larva Mortus
+boss_name_queen = Królowa Insektoidów
+
+boss_name_bc_box_set = Ceiling Boxes
+boss_name_bc_beer_line = Backup Barrels
+boss_name_bc_core = BEER CORE
+boss_name_bc_front = Beer Panzer
+
+boss_name_retro_1 = Konstrukt (Faza 1/3)
+boss_name_retro_2 = Konstrukt (Faza 2/3)
+boss_name_retro_3 = Konstrukt (Faza 3/3)
+
+boss_name_ms_F1_E = Battleship - The Front Arsenal (1/6)
+boss_name_ms_F1_S = Battleship - The Top Battery (2/6)   
+boss_name_ms_F1_W = Battleship - The Engines (3/6)
+boss_name_ms_F1_N = Battleship - The Bottom Arsenal (4/6) 
+boss_name_ms_F2 = Battleship - The Inner Core (5/6)
+boss_name_ms_final_body = Battleship Torso - The Cabin
+boss_name_ms_final_cabin = Battleship Torso - The Hull
+
+
+beer_core_fulite = 
+//You will be intoxicated! Resistence is futile!
+
+//------------------------------------------------------------------------------
+// LEVELS
+// ---- tutorial ----
+
+level_name_tutorial = Samouczek
+loc_1_tutorial = Gwiezdne Miasto 17  
+loc_2_tutorial = Strefa bezpieczeństwa      
+loc_3_tutorial = Wprowadzenie 
+
+[text = level_desc_tutorial] 
+Nauka użycia broni...
+[end]
+
+// ---- scity ----
+
+level_name_scity = Gwiezdne Miasto 17
+loc_1_scity = Gwiezdne Miasto 17   
+loc_2_scity = Dystrykt Alfa
+loc_3_scity = Sektor 78391-F
+
+[text = level_desc_scity] 
+\2Galaktyka jest zagrożona! Potężna technologia obcych znana jako \1generator nekrodroida\2 
+wpadła w ręce znanego klanu piratów i została sprzedana na czarnym rynku. 
+Członkowie klanu widywani są często w plugawej norze kosmicznych piratów i przemytników zwanej \1Gwiezdnym Miastem 17\2. 
+Ktoś z obecnych będzie wiedział więcej, ale przestępcy nie dadzą ci żadnych informacji bez walki. 
+Odnajdź sprzęt, zanim przyniesię zgubę całej Federacji Zjednoczonej Galaktyki!
+[end]
+
+// ---- highway ----
+
+level_name_highway = Kosmostrada Alfa
+loc_1_highway = Kosmostrada Alfa - 3B
+loc_2_highway = W kierunku Wrót 3  
+loc_3_highway = Sektor 78391-F 
+
+[text = level_desc_highway] 
+\2You have learned about the location of a secret pirate base, where the dangerous alien technology has been stored 
+for some time. Local gangsters are furious and put a price on your head. Mercenaries from the whole sector are 
+now on your tail, trying to get you. 
+You may have a chance to escape the Star City 17 via one of its skyways, but prepare for a pretty wild ride.
+[end]
+
+// ---- avatar ----
+
+level_name_avatar = Baza Piratów
+loc_1_avatar = Baza Piratów
+loc_2_avatar = Blueberry Gas Giant, Moon A   
+loc_3_avatar = Outer Rim XN-3485
+
+[text = level_desc_avatar] 
+\2You have found the pirate base, where the necrodroid generator was stored. It's located on one of the moons of a gas giant. 
+Quick scan shows formidable defences on the ground. It seems like the pirates have been paid well for their services, 
+and they invested in some new top-grade military tech to fortify their lair. 
+Find out who bought the generator and where it is now.
+[end]
+
+// ---- xmas secret level ----
+
+level_name_xmas = Mikołajkowa rozwałka
+loc_1_xmas = Mikołajkowa rozwałka
+loc_2_xmas = Blueberry Gas Giant, Moon B   
+loc_3_xmas = Outer Rim XN-3485
+
+[text = level_desc_xmas]
+\2To jest dodatkowy \1TAJNY POZIOM\2 wydany aby uczcić końcówkę roku w oryginalny sposób.
+Siej zniszczenie na swoich wrogów i spróbuj zebrać trzy tajne rodzaje broni poukrywane gdzieś w tym kolorowym zamarzniętym piekle!  
+[end]                               
+
+// ---- moon ----
+
+level_name_moon = Księżycowa Osada
+loc_1_moon = Księżycowa Osada 
+loc_2_moon = Binarny Układ Gwiezdny Zog-12
+loc_3_moon = Zewnętrzne Dominium Zogrima 
+
+[text = level_desc_moon] 
+\2Now it is clear, who bought the deadly technology. The insidious race of \1Zogrim\2 is trying to abuse it 
+for some sort of weapon research! You have learnt about a high tech lab, where they try to use the alien device 
+to build some sort of super-weapon. The nature of the weapon is unknown at the moment, but you have to stop it anyway. 
+No time to acquire more intel. Contain the dangerous technology, before it causes more trouble.
+[end]
+
+// ---- moon 2 ----
+
+level_name_moon2 = Laboratorium Klonowania
+loc_1_moon2 = Laboratorium Klonowania YBX-7 
+loc_2_moon2 = Binarny Układ Gwiezdny Zog-12 
+loc_3_moon2 = Zewnętrzne Dominium Zogrima 
+
+[text = level_desc_moon2]
+\2Data log you found burried in the asteroid shows position of another hidden base on the second moon of the planet. 
+The base seems to be a cloning facility, where Zogrim manufacture artificial soldiers. 
+It is not crucial to the main mission to destroy this operation, but you might as well put a stop to this abomination,
+while you are here in the sector.
+[end]
+
+// ---- ast ----
+
+level_name_ast = Pole Asteroid
+loc_1_ast = 
+loc_2_ast = Pole Asteroid 168-C  
+loc_3_ast = Sektor UY-19762
+
+[text = level_desc_ast] 
+\2You have destroyed the moon base with its entire crew and stopped their hideous project to build a gigantic super-soldier, 
+well before they managed to finish it.  
+But something went horribly wrong. Right now you are detecting markers of the necrodroid technology all over the place. 
+How can this be? The signals are spread throughout a nearby asteroid field. Fly there and investigate the source.
+[end]
+
+// ---- sea ----
+
+level_name_sea = Wodny Świat
+loc_1_sea = Baza Wojskowa Zogrima
+loc_2_sea = Południowy Kompleks Więzienny 
+loc_3_sea = Ludowa Republika Zogrima  
+
+[text = level_desc_sea] 
+\2You intercepted a swarm of necrodroid vessels in the asteroid field. Looks like your strike on Zogrim lab came too late, 
+as their experiments already attracted the attention of the deadly aliens! 
+Where do they come from? What is their plan? You got a tip to contact a \1secret agent Lemon\2, who trades with this type of information.
+He might have just what you need. Lemon's current location is on a prison planet covered with ocean. 
+Get him out and find out, what he knows.
+[end]
+
+// ---- gigant ----
+
+level_name_gigant = Giganteria
+loc_1_gigant = Giganteria Prime
+loc_2_gigant = Pole Piramid Gigantor  
+loc_3_gigant = Sektor GMTX-34258
+
+[text = level_desc_gigant] 
+\2Situation is not good. You have learnt that Necrodroids are deadly extra-dimensional beings. It is highly probable that they are preparing some 
+kind of hostile action against humanity. 
+Agent Lemon suggested to look for \1professor Klumpfuss\2, who is an expert for extra dimensional research and 
+he might know more about the aliens. Unfortunately, this man has been lost for some time. His last known location is on 
+\1planet of Gigantors\2, inhabited by a race of dangerous and destructive giant robots. Fly there immediately.
+[end]
+
+// ---- race ----
+
+level_name_race = Galactic Gumball
+loc_1_race = 
+loc_2_race = Galactic Gumball Race  
+loc_3_race = Hamburger Nebula
+
+[text = level_desc_race]
+\2By accident you stumbled upon an illegal space race. Try to fly through the course of deadly traps 
+and obstacles to win a special prize and get more money for new and better upgrades for your ship!  
+[end]
+
+// ---- beer ----
+
+level_name_beer = Imperium Piwa
+loc_1_beer = Imperium Piwa  
+loc_2_beer = Konstelacja Pijanego Żeglarza
+loc_3_beer = Sektor 01001453 
+
+[text = level_desc_beer] 
+\2On Giganteria you have discovered that professor Klumpfus disappeared in so-called \1holographic space\2 during 
+his experiments with interdimensional travel. It will be hard to get there, but even harder to return back. 
+There might be a solution. However it is a suicide mission. 
+Some sources indicate that the menace of the galaxy - dreaded \1Beer empire\2 - 
+has a technology able to make the dimensional jump necessary to get the professor back. 
+But getting the tech out of the hands of Beer armada may be too much even for an elite pilot like you.
+[end]
+
+
+
+
+// ---- bhole ----
+
+level_name_bhole = Baza Kwantowa
+loc_1_bhole = Baza Kwantowa
+loc_2_bhole = Sektor 6582 
+loc_3_bhole = Ludowa Republika Zogrima
+
+[text = level_desc_bhole] 
+\2With Beer jump drive secured, you have to find a way to holographic space. There is one possibilty. 
+Zogrim operate \1quantum research base\2 in one of their sectors, where they run dangerous illegal experiments 
+with black holes and warping of space-time continuum. If you manage to infiltrate the base, 
+you may try to use their equipment to open a passage to the holo-space. The defence will be fierce, 
+but with a bit of luck, you might get your ticket in.
+[end]
+
+// ---- retro ----
+
+level_name_retro = Holograficzna Przestrzeń
+loc_1_retro = 
+loc_2_retro = Holograficzna Przestrzeń  
+loc_3_retro = Nieznane położenie 
+
+[text = level_desc_retro] 
+\2Your attack on the quantum base caused catastrophic collapse in the adjacent facility on the nearby moon. 
+The created singularity sucked you in, but thanks to a lucky coincidence you emerged in the holographic space,
+instead of being crushed!
+It looks like there's a huge amount of ships and debris here, probably captured by black holes around the galaxy 
+and trapped inside this alternative dimension. You detected a massive structure ahead. 
+Let's hope the professor is still alive and can be found there.
+[end]
+
+
+// ---- insect ----
+
+level_name_insect = Insektoidiera
+loc_1_insect =
+loc_2_insect = Wielka Insektoidiera  
+loc_3_insect = Strefa Zamknięta  
+
+[text = level_desc_insect] 
+\2You extracted the professeor and he confirmed Lemon's theory. Necrodroids are extremely destructive. They invade any dimension 
+they find out about, and wipe out all inteligent life there. 
+The best course of action would be to strike them first inside their own realm. 
+For that you will need some sort of \1dimensional shield\2 to protect your ship from the effects of different laws of physics in their
+hostile space. However, the only known tech that could achieve such thing, 
+has been lost with an experimental ship in the middle of the \1Forbidden zone\2, 
+where deadly \1Insectoids\2 live. Explore the zone, find the ship and obtain the shield.
+[end]
+
+// ---- lava ----
+
+level_name_lava = Sztab Nekrodroida
+loc_1_lava = Sztab Nekrodroida
+loc_2_lava = Czerwony Olbrzym Kwak-357
+loc_3_lava = Sektor 73463-F6
+
+[text = level_desc_lava] 
+\2With the dimensional shield secured you have an opportunity for a preemptive strike on the Necrodroids, 
+before they get a chance to destroy us. 
+Our spies detected a massive base built by the enemy in a red giant solar system in a far away sector. 
+It must be some kind of vanguard to secure a stable passage between our universe and their dimension. 
+Attack the base, find the dimensional gate and prepare for the strike against the invaders.
+[end]
+
+
+// ---- finale ----
+
+level_name_finale = Pancernik Uderzeniowy
+loc_1_finale = 
+loc_2_finale = Wymiar Nekrodroida
+loc_3_finale = Nieznane położenie
+
+[text = level_desc_finale]
+\2This is it. The final ofensive. The enemy is tryng to build a gigantic unstopable \1invasion battleship\2. But their work is not
+finished yet. All the weapons are not yet operational and that gives you a fighting chance!
+Prepare for the battle, get the best equipment possible and destroy the invaders, before they manage to get through the gate into our universe!  
+[end]
+
+// ---- shop ----
+
+level_name_shop = Sklep
+loc_1_shop =   
+loc_2_shop = Poligon Balistyczny v0.1      
+loc_3_shop = Wszystkie układy w normie
+
+// ---- end ----
+
+
+level_name_end_normal = Koniec
+
+[text = level_desc_end_normal]
+\2After the defeat of the final boss, a dimensional breach appeared that can take you back.
+\n\n
+\3Use this to travel to another reality with the campaign on \1higher difficulty\3. Beware!
+There is no coming back! You can still stay here and replay a few levels to get better prepared 
+for the next challenge. 
+[end]
+
+
+//------- MEDALS --------
+
+name_medal/medal_0 = Zdobywca 2-go stopnia
+[text = desc_medal/medal_0] 
+Za ukończenie kampanii o \1zwykłej trudności\2.   
+[end]
+
+name_medal/medal_1 = Zdobywca 1-go stopnia
+[text = desc_medal/medal_1] 
+Za ukończenie kampanii o \1trudności wysokiej lub wyższej\2.   
+[end]
+
+name_medal/medal_2 = Władca Wszechświata
+[text = desc_medal/medal_2] 
+Za ukończenie kampanii o \110-tej Ostatecznej trudności\2.   
+[end]
+
+name_medal/medal_3 = Bezbłędne Zwycięstwo
+[text = desc_medal/medal_3] 
+Za ukończenie poziomu bez bycia zestrzelonym.
+[end]
+
+name_medal/medal_4 = Mistrz Automatów
+[text = desc_medal/medal_4] 
+Za ukończenie poziomu bez oberwania.   
+[end]
+
+name_medal/medal_5 = Żelazne Serce
+[text = desc_medal/medal_5] 
+Za przeżycie \1500 punktów \2obrażeń w trakcie misji.   
+[end]
+
+name_medal/medal_6 = Złoty Zbieracz
+[text = desc_medal/medal_6] 
+Za zdobycie \175% bonusów \2w trakcie misji.    
+[end]
+
+name_medal/medal_7 = Iron Veteran Wings
+[text = desc_medal/medal_7] 
+Za wygranie \1100 \2poziomów.   
+[end]
+
+name_medal/medal_8 = Wyróżniony Pogromca Boss-a
+[text = desc_medal/medal_8] 
+Za rozgromienie wroga klasy \1boss\2.   
+[end]
+
+name_medal/medal_9 = Nadzwyczajny Pogromca Boss-a
+[text = desc_medal/medal_9] 
+Za rozgromienie \1100\2 wrogów klasy boss.    
+[end]
+
+name_medal/medal_10 = Niszczyciel 2-go Stopnia
+[text = desc_medal/medal_10] 
+Za spowodowanie ponad \11 miliona \2obrażeń.   
+[end]
+
+name_medal/medal_11 = Niszczyciel 1-go Stopnia
+[text = desc_medal/medal_11] 
+Za spowodowanie ponad \110 milionów \2obrażeń.   
+[end]
+
+name_medal/medal_12 = Brązowy Krzyż Wojenny
+[text = desc_medal/medal_12] 
+Za \1pobicie rekordowego \2wyniku w danym poziomie.    
+[end]
+
+name_medal/medal_13 = Srebrny Krzyż Wojenny
+[text = desc_medal/medal_13] 
+Za zdobycie ponad \11 miliona \2punktów.   
+[end]
+
+name_medal/medal_14 = Złoty Krzyż Wojenny
+[text = desc_medal/medal_14] 
+Za zdobycie ponad \110 milionów \2punktów.   
+[end]
+
+name_medal/medal_15 = Brązowa Gwiazda
+[text = desc_medal/medal_15] 
+Za zniszczenie łącznie ponad \11 tysięcy \2wrogów.   
+[end]
+
+name_medal/medal_16 = Srebrna Gwiazda
+[text = desc_medal/medal_16] 
+Za zniszczenie łącznie ponad \15 tysięcy \2wrogów.   
+[end]
+
+name_medal/medal_17 = Złota Gwiazda
+[text = desc_medal/medal_17] 
+Za zniszczenie łącznie ponad \110 tysięcy \2wrogów.   
+[end]
+
+name_medal/medal_18 = Brązowy Niszczyciel Powietrzny
+[text = desc_medal/medal_18] 
+Za zniszczenie ponad \150% wrogów w powietrzu \2w danym poziomie.   
+[end]
+
+name_medal/medal_19 = Srebrny Niszczyciel Powietrzny
+[text = desc_medal/medal_19] 
+Za zniszczenie ponad \175% wrogów w powietrzu \2w danym poziomie.   
+[end]
+
+name_medal/medal_20 = Złoty Niszczyciel Powietrzny
+[text = desc_medal/medal_20] 
+Za zniszczenie ponad \190% wrogów w powietrzu \2w danym poziomie.   
+[end]
+
+name_medal/medal_21 = Brązowy Niszczyciel Naziemny
+[text = desc_medal/medal_21] 
+Za zniszczenie ponad \150% wrogów na powierzchni \2w danym poziomie.   
+[end]
+
+name_medal/medal_22 = Srebrny Niszczyciel Naziemny
+[text = desc_medal/medal_22] 
+Za zniszczenie ponad \175% wrogów na powierzchni \2w danym poziomie.   
+[end]
+
+name_medal/medal_23 = Złoty Niszczyciel Naziemny
+[text = desc_medal/medal_23] 
+Za zniszczenie ponad \190% wrogów na powierzchni \2w danym poziomie.   
+[end]
+
+name_medal/medal_24 = Brązowy Kat
+[text = desc_medal/medal_24] 
+Za zabicie ponad \1100 wrogiej piechoty \2w danym poziomie.   
+[end]
+
+name_medal/medal_25 = Srebrny Kat
+[text = desc_medal/medal_25] 
+Za zabicie w sumie ponad \11 tysiąca wrogiej piechoty\2.   
+[end]
+
+name_medal/medal_26 = Złoty Kat
+[text = desc_medal/medal_26] 
+Za zabicie w sumie ponad \110 tysięcy wrogiej piechoty\2.   
+[end]
+
+name_medal/medal_27 = Brązowy Odkrywca
+[text = desc_medal/medal_27] 
+Za odkrycie \1sekretu \2w danym poziomie.   
+[end]
+
+name_medal/medal_28 = Srebrny Odkrywca
+[text = desc_medal/medal_28] 
+Za odkrycie \1wszystkich sekretów \2w danym poziomie.   
+[end]
+
+name_medal/medal_29 = Złoty Odkrywca
+[text = desc_medal/medal_29] 
+Za odkrycie\1wszystkich sekretów \2w grze.   
+[end]
+
+
+
+
+
+name_test_gun = \8test gun
+name_test_gun_2 = \8test gun 2
+[text=desc_test_gun_2]
+\n dps 500 - stage 2000
+\n dps 1000 - stage 2010
+\n dps 1600 - stage 3000  
+\n dps 3000 - top zbran (stage 3015) 
+[end]
+
+name_test_bomb = \8test bomb
+name_test_device/blast = \8test device blast 
+
+name_test_heat_hot_fast = \8test_heat_hot_fast
+name_test_heat_hot_slow = \8test_heat_hot_slow
+name_test_heat_hot_slow2 = \8test_heat_hot_slow2
+name_test_heat_cold_fast = \8test_heat_cold_fast
+name_test_heat_cold_slow = \8test_heat_cold_slow
+
+
+
+[text = welcome_text]
+\3JUNE UPDATE
+\n
+\n\8Apart from great many minor bug fixes and tweak thats we are constantly adding 
+\nas the final release is getting near, we added two big chunks of new content:
+\n
+\n\3Holo-space level: 
+\n\8Quite a challenging addition. While the enemies are reused from previous levels 
+\nand therefore a freebie, the pseudo 3D background needed little extra effort. 
+\nAlso balancing level this wide turned out to be a little bit of nightmare - 
+\nespecially for different difficulty levels. We still probably got it wrong, so your  
+\nfeedback on this one will be crucial. There's a new type of boss-like structure  
+\nat the end to smash to pieces - not really a boss, but behaves a bit like a one.
+\n
+\n\3The final battle: 
+\n\8We've added a fight with a GIGANTIC enemy battleship with multiple phases and 
+\na ton of things to destroy. Synchronizing and scripting everything on an object 
+\nthis big and complex was quite a challenge. We were even forced to add 
+\na checkpoint in the middle of the fight for the first time. :D
+[end]
+
+
+/*
+[text = welcome_text]
+\3APRIL "DIFFICULTY" UPDATE
+\n\8This is a minor update but with some major changes to the game's core: 
+\n
+\n\3Gameplay changes:\8
+\n- Changed difficulty progression: Easier in the beginning but gets tough quicker. 
+\n- Change score progression: More in the beginning. Less on higher difficulties.  
+\n- Achievements and medals should work now.  
+\n 
+\n\3Items:\8
+\n- Powers and prices of bombs have been adjusted (boosted in many cases). 
+\n- Fixed Helix missile and Equalizer gem. 
+\n- New high end missiles: Banjo, Hailstorm. 
+\n- New high end bombs: General P.I.G., Mine Deployer, Acid Storm. 
+\n 
+\n\3Other Fixes:\8
+\n- Hardcore mode skips tutorial. 
+\n- Fixed unkillable Queen Larva. Queen telegraphs beam attack better. 
+\n- Beer Core's pretzel does much less damage.  
+\n- Various fixes of secret levels. (Cloning Colony should always appear now.) 
+[end]
+
+
+
+
+[text = welcome_text]
+\3MARCH UPDATE
+\n
+\n\8We have a ton of news after the long pause!
+\n\3Main updates for gameplay:\8
+\n- 2 new bosses for Beer level and Insect level. 
+\n- New secret level with a ton of troops combined with return of Carnage TV equip.
+\n- Secrets should work properly now.
+\n- Leaderboards.
+\n- New ship parts and camouflages to customize player's ship. 
+\n\3Items:\8
+\n- Much steeper pricing of devices.
+\n- A lot of new guns (too many to list here) + secret Duck gun and Excrementor. :D 
+\n- New gems: Criterion, Acidator, Muon Time Ring + end game item Equalizer 
+\n- New missiles: Red Mamba, Phoenix, Barracuda, Helix
+\n- New device: Armagedonator
+\n- New equipment: Carnage TV, Zogon's Insurance + end game item Set Enabler 
+\n\3Other:\8
+\n- A lot of text corrections based on feedback from BrewBreuw (Slurr). Thanks mate!
+[end]
+
+[text = welcome_text]
+\3NOVEMBER "DIFFICULTY" UPDATE
+\n
+\n\3What's new:
+\n\8  
+\nBiggest change: We've added several new features to enemies and levels 
+\non higher difficulties, to add challenge beyond just higher toughness:
+\nbarriers, beamers, mine deployers, turrets, missile launchers, death bombs, etc.
+\n
+\n\3We have also changed the following:\8 
+\n
+\n- HARDCORE MODE should work now.
+\n- Significantly reduced score/money.
+\n- First few levels and bosses on Normal difficulty should be easier.
+\n- Vampirion's healing power is halved.
+\n- Energy Barrier and Rammer have slightly smaller collision to avoid 
+\n  complete blocking of all incoming threads.
+
+[end]
+
+[text = welcome_text]
+\3NOVEMBER UPDATE
+\n
+\n\3What's new:
+\n\8  
+\n- New levels: Lava planet, Secret race level
+\n- New section in tutorial to introduce devices.
+\n- New device Energy Barrier that is part of the ship's loadout from start. 
+\n- More new devices: Hull Boost, Kaboom, Double Dragon (Hard), Arcaball (Nightmare)
+\n- New equipment: Scavenger, Quazitron Module (Hard), Fridge, Central Heat Sink, 
+\n  Device Connector (Nightmare), Demolisher (Hard)
+\n- New bombs: Vandal, Black Friday, Hell's Bells (Hard)
+\n- UI: Mission Failed screen. New Hero faces. Font size option.
+\n- Reworked game modes. \1Casual\8 now progresses in difficulty, just like \1Standard\8.
+\n- Preparation for \1Hardcore\8 mode. (Not working yet.) 
+\n- Various tweaks and fixes as always.
+[end]
+
+[text = welcome_text]
+\3OCTOBER UPDATE
+\n
+\n\8A lot of items and a new level are incoming in this update.
+\nEinhoff beer empire strikes back!
+\n
+\n\3What's new:
+\n\8  
+\n- New level: Beer Empire
+\n- New devices: Total Cooler, ShockWave, Time compressor.
+\n- New guns: Viper Gun, Clint Chaingun, Superkiller, Blackfist, two Kaiser cannons 
+\n	(new set items!), Super-Tornado, Xetec, Flamethrower, VX Quattro, Tesla Devastator. 
+\n- New missiles: Nova, Tigerfun, Trident.
+\n- UI change: larger font, debriefing screen.
+\n- Various minor tweaks and fixes as always.
+[end]
+
+[text = welcome_text]
+\3JULY UPDATE
+\n\8Here we come with the next update. The game went through massive 
+\noverhaul of enemy toughness, weapon power and prices, so some  
+\nserious testing is needed.
+\n
+\n\3What's new:
+\n\8  
+\n- Major changes to enemy toughness, weapon powers and prices.
+\n- Two new levels: Asteroid Field, Quantum Research Base 
+\n- New weapons: J.C. Superstar, Side Arm, Toxican, Zombie  
+\n  Blues (all on Normal)
+\n- New GEM: Dynamo (Hard)  
+\n- New equips: Harmonic Amplifier (Hard), Shell Grenadier (Hard), 
+\n  Supercharged Load (Nightmare)
+\n- Various minor tweaks and fixes as always.
+[end]
+
+
+
+[text = welcome_text]
+\3MAY UPDATE
+\n\8  
+\n- New levels: Starway Alpha, Insect Colony
+\n- New features: Loadouts, Local co-op
+\n- New objects: Ice crates and Xeno crates
+\n- New weapons: Shogun, Vulcan 
+\n- New bombs: Acid Cloud, Monkey Maniac 
+\n- New gems: Anarchon, Magnetrix 
+\n- New device: Loadout Swapper 
+\n- New equips: Cooling Fan, Heat Valve, Panic Attack, Zeldor Armor  
+\n- Many various bug fixes and adjustments. 
+[end]
+
+
+
+[text = welcome_text]
+\3MARCH UPDATE  
+\n\nNew items:\8
+\n- Atarix! You can hack cargo crates now.
+\n- Bomb Cauldron. Available on Normal.
+\n- Bomb Dragonball. Available on Hard. 
+\n- Device Rotary Cage. Available on Hard. 
+\n- Gem Angler Mangler. Available on Hard.
+\n- Weapon Hexagun. Available on Nightmare.
+\n- Miscelaneous items Teddy and Wander-Wurst as rewards from crates.  
+ 
+\n\n\3Bug fixes and other changes:\8
+\n- Fixed bug with firing AM devices even without AM. 
+\n- Two Focuses or Repulsors should no longer interfere with each other.
+\n- Repulsor shows in shop. (Wasn't showing before due to a bug.)
+\n- Fixed saving after Alt+F4.
+\n- B-1 bomb can be upgraded now to make it consistent.
+\n- Properly implemented leaderboards. Can be tested with Mortal Tetrix.
+[end]
+
+
+
+[text = welcome_text]
+\3FEBRUARY UPDATE  
+\8\n\n
+Here we are with our "February" update, with a bit of a delay because 
+\nwe needed to take our time with some of the new types of enemies.
+\n\n
+The core of the update is a new level. Hopefully, it's gonna be fun 
+\nand quite challenging (it was for us). We also have several 
+\nsmaller changes: 
+ 
+\n\n- Fixed overheat cheating when you repeat fire in the overheat zone.
+\n- Fixed Stingray damage on levels 2-4.
+\n- Blast Projector stops main gun, if you have at least one drone. 
+\n- New item Jet Pack (device).
+\n- New item Godfinger (gunbot).
+\n- New item ElectroBall (weapon).
+\n- Fixed level meter in shop TV, when player doesn't have enough money.       
+[end]
+
+
+
+[text = welcome_text]
+\3JANUARY UPDATE  
+\8\n\n
+After the December release we focused on all the feedback, so no new 
+\nlevels this time. But we have a lot of changes: 
+\n\n- No tabs in shop. Item categories are all listed in one panel.
+\n- Improved navigation in shop. On gamepad, trigger+stick does big jumps. 
+\n- Primary button is always select now, never swap. 
+\n- Auto-sorting button for cargo inventory.  
+\n- Profile menu shows ranks and some new statistics.  
+\n- Reworked options with mouse controls setup and several new options.   
+\n- Reworked HUD and mini-HUD on the ship. 
+\n- 4 new equipment items. 2 new devices.  
+\n- Blast projector copies only one shot of the main gun. Makes no heat.  
+\n- Scrolling speed has been slightly slowed down.   
+\n- Major rework of heat. It only builds up while shooting now. 
+\n- Hero dies, when caught on the left edge with a collision. 
+\n- Heaps of minor fixes and tweaks.  
+[end]
+
+
+[text = welcome_text]
+	\3UPDATE #2\n
+	XMAS MAYHEM 
+	\8\n\n
+	Merry Christmas to everyone! We dusted off our\n 
+	last year's joke with Xmas Mayhem level and turned\n 
+	it into an actual playable part of the game!\n 
+	\n 
+	\3What's new in this update:\8\n
+	- Mouse control\n
+	- New \3secret level\8 Xmas Mayhem\n
+	- New collecting challenge in the Xmas level\n
+	- New achievements for the Xmas level\n 
+	- 3 new Xmas weapons that create an \3item set\8\n
+	  with a special bonus feature on completion\n
+[end]
+
+
+[text = welcome_text]
+	\8WELCOME TO EARLY ACCESS OF \3JETS'N'GUNS 2
+	\8\n\n
+	Please note that the game is in development now\n 
+	and is in unfinished state. You can contact us\n
+	with suggestions and bug reports on Steam forums\n
+	or through our social media.\n
+	\n 
+	Thanks for your support and good luck with\n
+	smashing space evildoers!\n
+	\n
+	Rake in Grass
+[end]
+*/
+
+[text = game_mode_casual_desc]
+\1Prosta trudność gry \3jest optymalna dla mniej doświadczonych graczy oraz
+aby zapoznać się z grą i jej zawiłymi mechanikami.
+\n 
+\n- Zaczynasz z dodatkową bronią.
+\n- Masz dodatkowe kredyty do wydania
+\n  od samego początku. 
+\n- Wrogowie są słabsi.
+\n- Otrzymujesz kredyty z ponownego przejścia poziomów.
+[end]
+
+[text = game_mode_standard_desc]
+\1Zwykła trudność gry \3jest dość wymagająca i solidnie sprawdza twoje umiejętności.
+\n 
+\n- Brak dodatkowej broni oraz dotacji kredytów na początek.
+\n- Zwykła wytrzymałość wrogów.
+\n- Dostajesz kredyty tylko jeśli pobijesz swój
+\n  poprzedni najlepszy wynik na danym poziomie.  
+[end]
+
+[text = game_mode_hardcore_desc]
+\3OSTRZEŻENIE! 
+\n\n\9Hardcore'owa trudność gry \3jest taka jak \1Zwykła\3, ale możesz zginąć tylko raz! 
+Jeśli zawiedziesz, musisz
+rozpocząć grę od samego początku. 
+\n\nKONTYNUUJESZ NA WŁASNE RYZYKO!
+[end]
+
+[text = casual_victory]
+\3GRATULACJE!
+\n\n
+\8Ostateczne zwycięstwo jest twoje! Wygrałeś grę\n
+o \3prostej \8trudności.
+\n\n
+Jeśli pragniesz więcej akcji, możesz rzpocząć kolejną\n
+kampanię "na łatwym" albo spróbować \3normalnej \8trudności.\n
+Na "normalnym" gra jest bardziej wymagająca!\n
+Jeśli wygrasz, dostajesz dostęp\n
+do jeszcze trudniejszych poziomów!
+\n\n
+Powodzenia!   
+[end]
+
+
+//===== LEVEL texts ======
+main_hp = @main_hp
+
+
