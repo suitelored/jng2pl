@@ -116,11 +116,11 @@ game_paused = Pauza
 checkpoint_reached = Punkt kontrolny osiągnięty
 checkpoint_revive_reached = Drugi gracz jest znów w akcji!
 checkpoint_revive = WSKRZESZENIE
-hud_warning_hull_critical = KADŁUB W STANIE KRYTYCZNYM!
+hud_warning_hull_critical = POSZYCIE W STANIE KRYTYCZNYM!
 hud_warning_shield_out = TARCZA WYCZERPANA!
 hud_warning_mana_rady = U.L.T.R.A GOTOWE
 hud_warning_score = WYNIK +@score
-hud_warning_hp = INTEGRALNOŚĆ KADŁUBA +@hp
+hud_warning_hp = INTEGRALNOŚĆ POSZYCIA +@hp
 hud_warning_mission_completed = MISJA WYKONANA!
 hud_warning_mission_failed = PORAŻKA!
 hud_warning_ship_destroyed = OKRĘT ZOSTAŁ ZNISZCZONY!
@@ -891,10 +891,10 @@ incoming shots and rockets.
 \n\n\7To urządzenie zużywa antymaterię.
 [end]
 
-name_device/hull_boost = \7Doładowanie kadłuba
+name_device/hull_boost = \7Doładowanie poszycia
 quickinfo_device/hull_boost = Odnawia PW statku.
 [text = desc_device/hull_boost]
-Wtłacza antymaterię do zewnętrznych generatorów integralności kadłuba statku. 
+Wtłacza antymaterię do zewnętrznych generatorów integralności poszycia statku. 
 To pomaga przywrócić PW oraz zapewnia większą odporność na obrażenia przez ograniczony czas.  
 \n\n\7To urządzenie zużywa antymaterię.
 [end]
@@ -1222,8 +1222,8 @@ by other onboard weapons.
 name_equipment/panic_attack = Atak Paniki
 quickinfo_equipment/panic_attack = Zwiększa moc statku, gdy PW spada poniżej 30.
 [text = desc_equipment/panic_attack]
-Piloci podczas walki często orientują się, że ich życie wisi na włosku, kiedy integralność kadłuba spada niebezpiecznie blisko zera. 
-Moduł Ataku Paniki pomaga. Kiedy kadłub statku zejdzie poniżej pewnej granicy, to wyposażenie omija wszelkie zabezpieczenia
+Piloci podczas walki często orientują się, że ich życie wisi na włosku, kiedy integralność poszycia spada niebezpiecznie blisko zera. 
+Moduł Ataku Paniki pomaga. Kiedy poszycie statku zejdzie poniżej pewnej granicy, to wyposażenie omija wszelkie zabezpieczenia
 pokładowych systemów, znacznie zwiększając moc wszystkich broni. Niebezpieczna sztuczka, ale może dać 
 pilotowi dodatkową moc potrzebną do wydostania się z podbramkowej sytuacji.
 [end]
@@ -1265,12 +1265,12 @@ Nie da się uniknąć wszystkich kul w czasie ostrej bitwy! Tarcza jest tym dzie
 który wspiera cię pochłaniając znaczną porcję obrażeń. 
 [end]
 
-name_equipment/stingray_defender = Stingray Defender
-quickinfo_equipment/stingray_defender = Shoots a mini-rocket whenever your ship is hit.
+name_equipment/stingray_defender = Obrońca "Płaszczka"
+quickinfo_equipment/stingray_defender = Wystrzeliwuje mini-rakietę za każdym razem, gdy twój statek jest uderzony.
 [text = desc_equipment/stingray_defender]
-Stingray is an ingenious combination of defence and revenge. This upgrade installs small 
-rocket launchers under the plates of the ship's armor. Whenever your ship is hit, 
-it opens and shoots tiny missiles right back at your enemies. Death for scratching the paint!
+Płaszczka jest sprytnym połączeniem obrony i zemsty. To ulepszenie instaluje małe 
+wyrzutnie rakiet pod płytami pancerza statku. Za każdym razem, gdy twój statek jest uderzony, 
+otwiera i oddaje małymi rakietami twoim przeciwnikom. Śmierć za zadrapanie lakieru!
 [end]
 
 name_equipment/sulfuron_circuit = Sulfuron Circuit
@@ -1300,19 +1300,19 @@ fixme toxic_tank desc
 [end]
 
 name_equipment/zeldor_panzer = Zeldor Panzer
-quickinfo_equipment/zeldor_panzer = Hull integrity: \110\0 HP\nAll incoming damage: \1-1\0 HP\nAll HP bonuses: \1+1\0 HP 
+quickinfo_equipment/zeldor_panzer = Wytrzymałość poszycia: \110\0 HP\nKażde otrzymane obrażenia: \1-1\0 HP\nWszystkie bonusy HP: \1+1\0 HP 
 [text = desc_equipment/zeldor_panzer]
-Experimental technology from Hiluran Armory uses so called "\0digitization of reality\2" for total conversion
-of the hull matrix on subatomic level. It forces fixed value of HP for the ship, but in exchange it equalizes 
-all incoming damage to exactly 1. Most pilots call it suicide, but some find it a very useful feature.  
+Próbna technologia Hilurańskiej Zbrojowni używa tak zwanej "\0cyfryzacji rzeczywistości\2" do całkowitej konwersji
+macierzy poszycia na poziomie subatomowym. Wymusza to stałą wartość PW statku, ale w zamian wyrównuje 
+każde otrzymane obrażenia dokładnie do 1. Większość pilotów nazywa to samobójstwem, ale nieliczni uważają to za bardzo pomocną właściwość.  
 [end]
 
-name_equipment/zogon_insurance = Zogon Insurance
-quickinfo_equipment/zogon_insurance = Emergency armor pack,\nwhen hull becomes critical.\n\nCritical limit: \125\0 HP\nArmor bonus: \1+50\0 HP 
+name_equipment/zogon_insurance = Ubezpieczenie Zogon
+quickinfo_equipment/zogon_insurance = Zapasowy zestaw pancerza,\nkiedy poszycie jest w stanie krytycznym.\n\nKrytyczny limit: \125\0 HP\nPremia pancerza: \1+50\0 HP 
 [text = desc_equipment/zogon_insurance]
-Zogon's Insurance is a reliable partner for all space mercenaries. Their patented transmitter sends signal whenever 
-the ship's hull integrity gets criticaly low. The company then sends a delivery ship with a bonus armor.
-\n\1It takes a minute before another delivery is possible. 
+Ubezpieczenie Zogona jest zaufanym towarzyszem wszystkich kosmicznych najemników. Ich opatenowany transmiter wysyła sygnał gdy tylko 
+integralność poszycia statku staje się krytycznie niska. Spólka wysyła wtedy statek dostawczy z dodatkowym pancerzem.
+\n\1Zajmuje to minutę, zanim następna przesyłka będzie możliwa. 
 [end]
 
 
@@ -1625,7 +1625,7 @@ param_collision_dps_per_drone = Collision DPS: @val@bonus \0per drone
 param_damage = Damage: @val@bonus 
 param_bomb_damage = Bomb damage: @val@bonus 
 
-param_damage_from_total_dps = Power: \1@val\0 % of total DPS\nDamage: \1@total_dps_percent
+param_damage_from_total_dps = Moc: \1@val\0 % całkowitego DPS\nObrażenia: \1@total_dps_percent
 param_damage_from_bomb_damage = Damage: \1@bomb_damage_percent\n\0Power: \1@val\0% of bomb damage
 param_drone_collision_damage_bonus = Drone collision damage: @sig_val \0%
 
@@ -1687,8 +1687,8 @@ param_chance_to_wave_bonus = Chance to wave: @sig_val \0%
 
 
 //weapons
-param_fire_rate = Szybkostrzelność: @val@bonus \0/sec
-param_heat_per_sec = Nagrzewanie: @val@bonus \0/sec
+param_fire_rate = Szybkostrzelność: @val@bonus \0/sek
+param_heat_per_sec = Nagrzewanie: @val@bonus \0/sek
 
 param_batch_size = Rozmiar serii: @val@bonus
 param_reload_delay = Czas przeładowania: @val@bonus \0 sec
@@ -1698,7 +1698,7 @@ param_missile_count = Rakiet na cel: @val
 
 //hp & recovery
 param_hp_factor = PW: @sig_val \0%
-param_hp_recharge = Naprawa kadłuba: @sig_val \0PW/sek
+param_hp_recharge = Naprawa poszycia: @sig_val \0PW/sek
 param_hero_cooling_factor = Chłodzenie: @sig_val \0%
 param_hero_heat_factor = Grzanie: @neg_sig_val \0%
 param_mana_recharge = Antymateria: @sig_val \0/sek
@@ -1712,7 +1712,7 @@ param_mana = Koszt antymaterii: @val
 //shield
 param_shield_max = Moc tarczy: @val \0PW
 param_shield_recharge = Odnawianie tarczy: @sig_val \0PW/sek
-param_shield_delay = Opóźnienie odnawiania: @val \0sek
+param_shield_delay = Oczekiwanie na odnawianie: @val \0sek
 
 //misc
 param_hero_resistance = Odporność na obrażenia @val\0%
@@ -1720,7 +1720,7 @@ param_mine_count = Miny: @val
 param_drone_count = Drony: @val
 
 [text = param_gem/pyro_damage] 
-Fire damage @val \1/sec \0per shot
+Fire damage @val \1/sek \0na strzał
 [end]
 
 //------------------------------------------------------------------------------
@@ -1973,7 +1973,7 @@ mission_stat_villains = Zdobyte nagrody
 mission_stat_no_bounty = brak licencji
 mission_stat_toxico = Wypłata Toxico
 mission_stat_no_toxico = niezainstalowane
-mission_stat_zogon = Ubezpieczenie Zogon's
+mission_stat_zogon = Ubezpieczenie Zogona
 mission_stat_no_zogon = nie użyte
 mission_stat_profit = Zysk
 mission_stat_air_enemy_kill = Rozbite jedn. powietrzne 
