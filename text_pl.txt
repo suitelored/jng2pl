@@ -1700,7 +1700,7 @@ param_missile_count = Rakiet na cel: @val
 param_hp_factor = PW: @sig_val \0%
 param_hp_recharge = Naprawa poszycia: @sig_val \0PW/sek
 param_hero_cooling_factor = Chłodzenie: @sig_val \0%
-param_hero_heat_factor = Grzanie: @neg_sig_val \0%
+param_hero_heat_factor = Nagrzewanie: @neg_sig_val \0%
 param_mana_recharge = Antymateria: @sig_val \0/sek
 
 param_max_burning_heat = Burning heat: @sig_val
@@ -1853,7 +1853,7 @@ button_choose_profile = GRACZE //CHANGE PLAYER
 button_quit_game = WYJDŹ Z GRY
 button_mods = MODY
 button_credits = AUTORZY
-button_start_level = LEĆ!
+button_start_level = LEĆMY!
 button_web_page = INFORMACJE ZWROTNE
 button_leaderboards = RANKING
 
