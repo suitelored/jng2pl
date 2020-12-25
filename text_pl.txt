@@ -1,4 +1,4 @@
-﻿/*
+/*
 
 text colors:
 0 - domyślny "złoty"
@@ -1389,19 +1389,19 @@ resulting in a powerful electric discharge. The power of the discharge depends o
 |item_desc_gem|
 [end]
 
-name_gem/furnator = Furnator
-quickinfo_gem/furnator = Adds burning effect on a weapon. 
+name_gem/furnator = Piecownik
+quickinfo_gem/furnator = Dodaje efekt podpalenia do broni. 
 [text = desc_gem/furnator]
-This enhancement heats up anything that comes out of your weapon to high temperatures, 
-thus giving it the ability to ignite targets for \9burn damage\2 over time.
-But it also creates a lot of extra heat.
+Ta modyfikacja rozgrzewa wszystko, co wylatuje z twojej broni, do wysokich temperatur, 
+tym samym dając temu możliwość podpalania celów jako \9obrażenia od ognia\2 w pewnym okresie czasu.
+No, ale też wytwarza o wiele więcej dodatkowego ciepła.
 |item_desc_gem|
 [end]
 
-name_gem/heat_sink = Heat Sink 
-quickinfo_gem/heat_sink = Lowers heating of the weapon.
+name_gem/heat_sink = Pochłaniacz Ciepła 
+quickinfo_gem/heat_sink = Obniża nagrzewanie danej broni.
 [text = desc_gem/heat_sink]
-Basic cooling system that reduces heat radiation from the weapon.
+Podstawowy układ chłodzenia który obniża promieniowanie cieplne z broni.
 |item_desc_gem|
 [end]
 
