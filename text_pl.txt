@@ -332,31 +332,30 @@ nieograniczonym zasobem naboi. Rezultat jest ciągłym dewastującym strumieniem
 
 name_weapon/superstar = J. C. Superstar
 [text = desc_weapon/superstar]
-Weapon was constructed by lunatic DJ Honduras back in 2660. DJ created the gun out of light
-effects of his disco to eradicate all dancers in oldies clubs in the whole universe. DJ was
-stopped after the 156th pangalactic gathering of Elvis' doubles, who slaughtered him with
-their guitars.
+Broń ta została skonstruowana przez krejzola DJa Hondurasa już w roku 2660. DJ zrobił spluwę z oświetlenia
+swojej dyskoteki by pozbyć się wszystkich tańczących w klubach ze starszą muzyką w całym wszechświecie. DJ został powstrzymany
+po 156-tym pangalaktycznym zgromadzeniu dublerów Elvisa, którzy zarżnęli go swoimi gitarami.
 [end]
 
 name_weapon/kaiser_franz = Kaiser Franz
 [text = desc_weapon/kaiser_franz]
-This massive cannon is designed for large invasion battle ships, but some power obsessed
-pilots install these on fighter jets as well. Kaisers are heavy and slow cannons, but their 
-lack of fire rate is balanced out by sheer power and minimum heating.
+To potężne działo zaprojektowane jest dla dużych okrętów inwazyjnych, ale część zafascynowanych mocą
+pilotów instaluje je także w myśliwcach bojowych. Kaisery są ciężkimi i powolnymi działami, ale ich 
+braki w szybkostrzelności są nadrabiane przez ogromną siłę i nieodczuwalne nagrzewanie.
 [end]
 
 name_weapon/kaiser_leopold = Kaiser Leopold
 [text = desc_weapon/kaiser_leopold]
-Even larger model of the famous Kaiser series of heavy cannons. Huge projectiles
-deliver devastating damage to the targets. Kaisers are heavy and slow cannons, but their 
-lack of fire rate is balanced out by sheer power and minimum heating.
+Jeszcze większy model ze znanej serii ciężkich dział Kaiser. Ogromne cząstki
+dostarczają celom pustoszące obrażenia. Kaisery są ciężkimi i powolnymi działami, ale ich 
+braki w szybkostrzelności są nadrabiane przez ogromną siłę i nieodczuwalne nagrzewanie.
 [end]
 
 name_weapon/krakator = Krakator
 [text = desc_weapon/krakator]
-Krakator is an extremely devastating scatter gun. The composite projectiles have limited life time.
-They either hit directly for massive damage or tear apart mid-air in burst of secondary projectiles
-which deliver even more destructive power to all targets within their reach.  
+Krakator siejącym ekstremalne spustoszenie działem. Kompozytowe cząstki posiadają ograniczony czas istnienia.
+Uderzają one bezpośrednio zadając potężne obrażenia lub rozlatują się w powietrzu w grad mniejszych cząstek
+które obrzucają wszystkie cele w ich zasięgu jeszcze bardziej niszczącą mocą.
 [end]
 
 name_weapon/la_fontaine = La Fontaine
@@ -1620,8 +1619,8 @@ item_duplicity = \6Same item is already installed!
 
 //damage
 param_dps = DPS: @val@bonus
-param_collision_dps = Collision DPS: @val@bonus
-param_collision_dps_per_drone = Collision DPS: @val@bonus \0per drone
+param_collision_dps = DPS zderzenia: @val@bonus
+param_collision_dps_per_drone = DPS zderzenia: @val@bonus \0per drone
 param_damage = Damage: @val@bonus 
 param_bomb_damage = Bomb damage: @val@bonus 
 
@@ -1727,7 +1726,7 @@ Fire damage @val \1/sek \0na strzał
 // ITEM SET PARAMS
 
 param_set_xmas = \8\nXmas set: Spawns reindeer harness in front of the ship. 
-param_set_kaiser = \8\nKaiser set: Adds large cannon turret. 
+param_set_kaiser = \8\nZestaw Kaiser: Dodaje wieżyczkę z wielkim działem. 
 
 //------------------------------------------------------------------------------
 
@@ -2045,7 +2044,7 @@ main_menu_created_by = \3Stworzone przez
 main_menu_player = Pilot
 main_menu_players = Piloci
 
-hint_main_continue = \3Kontunuuj poprzedni stan gry
+hint_main_continue = \3Kontynuuj poprzedni stan gry
 hint_main_new_game = \3Rozpocznij nową grę
 hint_main_new_game_disabled = \6Brak wybranego profilu bohatera
 hint_main_choose_profile = \3Wybierz profil bohatera
